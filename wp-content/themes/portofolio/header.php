@@ -21,6 +21,8 @@
 		<link rel="apple-touch-icon" href="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/icons/apple-touch-icon.png">
     <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/assets/components/owl.carousel/dist/assets/owl.carousel.css">
     <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/animate.css">
+    <script src='http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js'></script>
+    <script src="<?php echo get_stylesheet_directory_uri() ?>/jquery.scrollme.min.js"></script>
 		<?php wp_head(); ?>
 	</head>
 	<body <?php body_class(); ?>>

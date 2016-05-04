@@ -11,6 +11,9 @@
 ?>
     <div class="in-footer">
       <div class="in">
+          <h3>Contact</h3>
+          <hr>
+          <p>Votre projet m'interesse, et je suis persuadé d'être la personne qu'il vous faut, sans prétention ;).<br>N'hésitez pas à m'envoyer un message pour m'en faire part.</p>
         <?php echo do_shortcode('[contact-form-7 id="9" title="Formulaire de contact 1"]') ?>
       </div>
     </div>
@@ -41,7 +44,6 @@
 	</div><!-- Close off-canvas wrapper -->
 </div><!-- Close off-canvas content wrapper -->
 <?php endif; ?>
-
 <script src="<?php echo get_stylesheet_directory_uri() ?>/assets/components/owl.carousel/dist/owl.carousel.min.js"></script>
 <script>
 var owl = $('#owl-carousel');
@@ -57,7 +59,8 @@ var owl = $('#owl-carousel');
 		loop:true,
 	});
 </script>
-
+<script src="<?php echo get_stylesheet_directory_uri() ?>/jquery.fadethis.js"></script>
+<script>$(window).fadeThis();</script>
 <?php wp_footer(); ?>
 <?php do_action( 'foundationpress_before_closing_body' ); ?>
 </body>

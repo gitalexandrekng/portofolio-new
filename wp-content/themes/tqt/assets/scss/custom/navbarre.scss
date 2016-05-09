@@ -1,0 +1,33 @@
+.navbarre{
+  position:absolute;
+  top:0;
+  background:rgba(255,255,255,0);
+  width:100%;
+  font-family:"Raleway", helvetica, sans-serif;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  height:50px;
+  display:flex;
+  z-index:9999;
+
+  .sitename{
+    // padding-left:0;
+  }
+
+  .in{
+    margin:auto;
+    padding-left:50px;
+    padding-right:50px;
+    width:100%;
+
+    a{
+      color:white;
+      transition:0.5s;
+      font-weight:bold;
+
+      &:hover{
+        color:#666;
+      }
+    }
+  }
+}

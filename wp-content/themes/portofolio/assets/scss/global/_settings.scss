@@ -104,8 +104,8 @@ $block-grid-max: 8;*/
 $grid-row-width: $global-width;
 $grid-column-count: 12;
 $grid-column-gutter: (
-  small: 0px,
-  medium: 0px,
+  small: 15px,
+  medium: 15px,
 );
 $grid-column-align-edge: true;
 $block-grid-max: 8;
@@ -113,7 +113,7 @@ $block-grid-max: 8;
 // 4. Base Typography
 // ------------------
 
-$header-font-family: $body-font-family;
+$header-font-family: "Raleway", $body-font-family;
 $header-font-weight: $global-weight-normal;
 $header-font-style: normal;
 $font-family-monospace: Consolas, 'Liberation Mono', Courier, monospace;

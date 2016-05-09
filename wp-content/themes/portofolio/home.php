@@ -193,6 +193,22 @@ get_header(); ?>
   </section>
   <section class="qualifications">
     <h3>Qualifications</h3>
+    <div class="row">
+      <div class="small-6 columns">
+        <h4>Certifications OpenClassrooms</h4>
+        <ul>
+          <li>[HTML / CSS] Découper et intégrer une maquette</li>
+          <li>[HTML / CSS] Prenez en main Bootstrap</li>
+          <li>[HTML / CSS] Créez votre premier site avec WordPress</li>
+          <li>[HTML / CSS] Découvrez les solutions CMS</li>
+          <li>[HTML / CSS] Apprenez à créer votre site web avec HTML5 et CSS3</li>
+          <li>[SEO] Les clés pour réussir son référencement web</li>
+          <li>[WEB] Comprendre le Web</li>
+          <li>[WEB] Apprenez à naviguer en sécurité sur Internet</li>
+        </ul>
+      </div>
+      <div class="small-6 columns"></div>
+    </div>
   </section>
 </div>
 

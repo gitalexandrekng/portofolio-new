@@ -17,7 +17,7 @@ get_header(); ?>
 <div class="wrapper">
 
   <div style="height:100%" class="scrollme">
-    <div class="banniere animateme" data-when="view" data-from="0" data-to="1" data-opacity="0" data-scale="1.2">
+    <div class="banniere animateme" data-when="exit" data-from="0" data-to="0.8" data-opacity="0" data-scale="1.2">
     	<div class="slider-texte animateme" data-when="exit" data-from="0" data-to="0.50" data-opacity="0" data-translatey="-250">
     		<div class="owl-carousel" id="owl-carousel">
     			<div class="item">Passionnant</div>
@@ -100,20 +100,25 @@ get_header(); ?>
   <section class="fluid creations">
 
     <div class="in-creations">
-      <div class="row">
-        <div class="small-8 columns image scrollme animateme" data-when="span" data-from="0.7" data-to="0" data-opacity="0" data-translatey="250" style="background-image:url(<?php echo get_stylesheet_directory_uri() ?>/images/1.jpg)"></div>
+      <div class="row border scrollme animateme" data-when="span" data-from="0.7" data-to="0" data-opacity="0" data-translatey="250">
+        <div class="small-8 columns image" style="background-image:url(<?php echo get_stylesheet_directory_uri() ?>/images/1.jpg)"></div>
         <div class="small-4 columns"></div>
       </div>
       <div class="row texte">
         <div class="small-6 columns"></div>
         <div class="small-6 columns">
-          <div class="title scrollme animateme" data-when="view" data-from="1" data-to="0" data-opacity="0" data-translatey="250">
+          <div class="title scrollme animateme" data-when="view" data-from="1" data-to="0" data-opacity="1" data-translatey="300">
             <h2>Portail des haras</h2>
           </div>
           <div class="row">
             <div class="small-4 columns"></div>
             <div class="small-8 columns">
-              <div class="content">exte standard de l'imprimerie depuis les années 1500, quand un peintre anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte. Il n'a pas fait que survivre cinq siècles, mais s'est aussi adapté à la bureautique informatique, sans que son contenu n'en soit modifié. Il a été popularisé </div>
+              <div class="content">
+                <ul>
+                  <li><strong>TYPE</strong> : Site web</li>
+                  <li><strong>ROLE</strong> : Designer / dev / intégrateur</li>
+                </ul>
+              </div>
               <div class="bouton">View more</div>
             </div>
           </div>
@@ -122,20 +127,25 @@ get_header(); ?>
     </div>
 
     <div class="in-creations">
-      <div class="row">
-        <div class="small-8 columns image scrollme animateme" data-when="span" data-from="0.7" data-to="0" data-opacity="0" data-translatey="250" style="background-image:url(<?php echo get_stylesheet_directory_uri() ?>/images/1.jpg)"></div>
+      <div class="row border scrollme animateme" data-when="span" data-from="0.7" data-to="0" data-opacity="0" data-translatey="250">
+        <div class="small-8 columns image" style="background-image:url(<?php echo get_stylesheet_directory_uri() ?>/images/4.jpg)"></div>
         <div class="small-4 columns"></div>
       </div>
       <div class="row texte">
         <div class="small-6 columns"></div>
         <div class="small-6 columns">
-          <div class="title scrollme animateme" data-when="view" data-from="1" data-to="0" data-opacity="0" data-translatey="250">
-            <h2>Portail des haras</h2>
+          <div class="title scrollme animateme" data-when="view" data-from="1" data-to="0" data-opacity="1" data-translatey="300">
+            <h2>Brasserie des Haras</h2>
           </div>
           <div class="row">
             <div class="small-4 columns"></div>
             <div class="small-8 columns">
-              <div class="content">exte standard de l'imprimerie depuis les années 1500, quand un peintre anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte. Il n'a pas fait que survivre cinq siècles, mais s'est aussi adapté à la bureautique informatique, sans que son contenu n'en soit modifié. Il a été popularisé </div>
+              <div class="content">
+                <ul>
+                  <li><strong>TYPE</strong> : Site web</li>
+                  <li><strong>ROLE</strong> : Designer / dev / intégrateur</li>
+                </ul>
+              </div>
               <div class="bouton">View more</div>
             </div>
           </div>
@@ -144,20 +154,25 @@ get_header(); ?>
     </div>
 
     <div class="in-creations">
-      <div class="row">
-        <div class="small-8 columns image scrollme animateme" data-when="span" data-from="0.7" data-to="0" data-opacity="0" data-translatey="250" style="background-image:url(<?php echo get_stylesheet_directory_uri() ?>/images/1.jpg)"></div>
+      <div class="row border scrollme animateme" data-when="span" data-from="0.7" data-to="0" data-opacity="0" data-translatey="250">
+        <div class="small-8 columns image" style="background-image:url(<?php echo get_stylesheet_directory_uri() ?>/images/1.jpg)"></div>
         <div class="small-4 columns"></div>
       </div>
       <div class="row texte">
         <div class="small-6 columns"></div>
         <div class="small-6 columns">
-          <div class="title scrollme animateme" data-when="view" data-from="1" data-to="0" data-opacity="0" data-translatey="250">
+          <div class="title scrollme animateme" data-when="view" data-from="1" data-to="0" data-opacity="1" data-translatey="300">
             <h2>Portail des haras</h2>
           </div>
           <div class="row">
             <div class="small-4 columns"></div>
             <div class="small-8 columns">
-              <div class="content">exte standard de l'imprimerie depuis les années 1500, quand un peintre anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte. Il n'a pas fait que survivre cinq siècles, mais s'est aussi adapté à la bureautique informatique, sans que son contenu n'en soit modifié. Il a été popularisé </div>
+              <div class="content">
+                <ul>
+                  <li><strong>TYPE</strong> : Site web</li>
+                  <li><strong>ROLE</strong> : Designer / dev / intégrateur</li>
+                </ul>
+              </div>
               <div class="bouton">View more</div>
             </div>
           </div>
@@ -165,6 +180,19 @@ get_header(); ?>
       </div>
     </div>
 
+    <div class="all">
+      <a href="">Vous voulez en voir plus ?</a>
+    </div>
+
+    <div class="liked">
+      Vous aimez mon travail ?<br>
+      Vous avez vous même envie de créer votre site web ?<br>
+      Ca tombe bien, faîtes moi part de votre projet.
+      <a href="" class="contact-button">Formulaire de contact</a>
+    </div>
+  </section>
+  <section class="qualifications">
+    <h3>Qualifications</h3>
   </section>
 </div>
 

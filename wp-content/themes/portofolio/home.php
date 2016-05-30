@@ -90,7 +90,7 @@ get_header(); ?>
   <section class="row plusplus">
     <div class="small-12 columns">EN SAVOIR PLUS</div>
   </section>
-  <section class="title-creations">
+  <section class="title-creations scrollme animateme" data-when="span" data-from="0.7" data-to="0" data-opacity="0" data-translatey="250">
     <div class="title">
       <h3>Dernières créations</h3>
       <hr>

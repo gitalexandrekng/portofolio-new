@@ -19,7 +19,7 @@
 
 // ** Réglages MySQL - Votre hébergeur doit vous fournir ces informations. ** //
 /** Nom de la base de données de WordPress. */
-define('DB_NAME', 'portofoliov2');
+define('DB_NAME', 'portofolio');
 
 /** Utilisateur de la base de données MySQL. */
 define('DB_USER', 'root');
@@ -49,14 +49,14 @@ define('DB_COLLATE', '');
  *
  * @since 2.6.0
  */
-define('AUTH_KEY',         'p{:yA27mX|BQ_87>{4fCGxgm+]Ode`I2{M%|aEC9DQ/KB7!)>i-@/R~w~%6+H1_%');
-define('SECURE_AUTH_KEY',  '{P<S;No4,yS)dl(99~=j?;m@/Wsl f(3D>M8-vFf.H02<+uQwT0fR2-J `le@w^b');
-define('LOGGED_IN_KEY',    ',QIE]TyF<k-iZmqn|w|ziz=(~4^S-fuD{mK/4/mcg5& AS(V`Ni9wlFJ_l$j-_BN');
-define('NONCE_KEY',        '?J$#Id+nzB|u9<o.?es!AW#v +@[]~=8qH|yur6/9W%>+d{:?#?{N`W.#xuEr`bA');
-define('AUTH_SALT',        '%sptqU1Uw3vf44k3-7NQRKKN6k0eqfKi6ob~,57-SK_IeY,-{;!>}/y,n?/rcp7v');
-define('SECURE_AUTH_SALT', 'zx[#@E+/wa{kSi0hGLn>-0@=L,cjN8CoeCb|%p2o/<,|B2J.dGY]I|EVwwGO7<J)');
-define('LOGGED_IN_SALT',   'v`eu>qACvHessLZV%ZG!_TeWNu)QLHv}d]Zq;~0bl8.HFy$Hz_fSyQg`f=C~/mR~');
-define('NONCE_SALT',       'v0JGdA0{1TGzx}irz+_4O+AgC8P4r<[rdq@+]fD#[,@O{$]17Dp*e8x|+.-)>|*e');
+define('AUTH_KEY',         '{4L?XJukSo*b(b<;vbQP@~3AT@xGu-JG8&VdLb<(h?$.8r%(W2MZMx)Nw:;Af72(');
+define('SECURE_AUTH_KEY',  'Yhzje*KtRj{+M75$@;dL83}+u|74M {3Zxr*0c&Suuge#/.[6*t-6Myy5sDaGGht');
+define('LOGGED_IN_KEY',    '<h0u]KJpN>t`]m0xTqo;jkpXG]*o~}TO}l5aR !r$wpvx_l[)n<3qzstLBoVK<~A');
+define('NONCE_KEY',        '{^sw+^&Eb+NXE6=xrC3[kJX><[YGQX{kT,,-E?5_X(8nve$aF#|D94b]adT]|}|M');
+define('AUTH_SALT',        'V& o&5`UcDIl<$_!tyDBWm/2bp;3;y2t3v*D3j7H2x*k*5ne,7j!HccUSh&LjKa3');
+define('SECURE_AUTH_SALT', 'uW~.yH]Nu5|}CwHiO8-a5O.@Lh]2lY1,~XWll]F(.,R}86s+OE>Eh|j||)-R!YL8');
+define('LOGGED_IN_SALT',   '/W?Z7`^hs7B9p!y.{HT5<Jl;w*raJ=$[T&UHkWfaoIDVcN*;]]=>`0=9(s9/$_z,');
+define('NONCE_SALT',       'P:Jrk7eC@-8;lg.Q~&b9KzKS5}B 5doI6`p9#7M(bJfq@hsiZC^o;4539k~P^_=~');
 /**#@-*/
 
 /**
@@ -76,6 +76,11 @@ $table_prefix  = 'wp_';
  * Il est fortemment recommandé que les développeurs d'extensions et
  * de thèmes se servent de WP_DEBUG dans leur environnement de
  * développement.
+ *
+ * Pour plus d'information sur les autres constantes qui peuvent être utilisées
+ * pour le déboguage, rendez-vous sur le Codex.
+ * 
+ * @link https://codex.wordpress.org/Debugging_in_WordPress 
  */
 define('WP_DEBUG', false);
 

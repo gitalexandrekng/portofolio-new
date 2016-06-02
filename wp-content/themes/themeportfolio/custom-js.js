@@ -1,6 +1,19 @@
+$(window).load(function(){
+    setTimeout(function(){
+        $('.loader').addClass('animated bounceOutUp')
+
+        setTimeout(function(){
+            $('.customheader').addClass('animated fadeIn')
+            $('.content-slide').css('opacity', 1)
+        },100)
+    }, 2000)
+
+    $('.container').addClass('animated fadeIn')
+})
+
 $('body').ready(function(){
     $('.inslide').css({height: $(window).height(), width: $(window).width()})
-    $('#zooms .item').css({height: $('.groszoom').height(), width: $('.groszoom').width()})
+    $('#zooms .item .ins').css({height: $(window).height(), width: $(window).width() / 2})
 })
 
 $('#head').owlCarousel({
@@ -35,12 +48,6 @@ $('.seemore').hover(function(){
     $('.text-see').css({opacity:'0', right:'-10%'})
 })
 
-/*$('.groszoom').hover(function(){
-    $(this).css('width', '50%')
-}, function(){
-    $(this).css('width', '45%')
-})*/
-
 $('.sociallink').hover(function(){
     $(this).find('i').css({color:'#666'})
 }, function(){
@@ -55,7 +62,7 @@ $('.crea').on('click', function(){
     $('.logosvgroue').addClass('customize')
     setTimeout(function(){
         $('.logosvgroue').removeClass('customize')
-    }, 1000)
+    }, 2000)
 })
 
 $('.crea').on('click', function(){
@@ -77,3 +84,27 @@ $('.crea').on('click', function(){
         $('.crea:not(.active)').css('pointer-events', 'auto')
     }, 2000)
 })
+
+$("a.hello[href]").click(function(e){
+    e.preventDefault()
+    var self = $(this);
+    $('.groszoom').css({width:'0%', transition:'1s'})
+    setTimeout(function(){
+        $('body').addClass('animated fadeOut')
+    },1000)
+    setTimeout(function(){
+        window.location.href = self.attr('href');
+    }, 2000)
+});
+
+$("a.moreportfolio[href]").click(function(e){
+    e.preventDefault()
+    var self = $(this);
+    $('.groszoom').css({width:'100%', transition:'1s'})
+    setTimeout(function(){
+        $('body').addClass('animated fadeOut')
+    },1000)
+    setTimeout(function(){
+        window.location.href = self.attr('href');
+    }, 2000)
+});

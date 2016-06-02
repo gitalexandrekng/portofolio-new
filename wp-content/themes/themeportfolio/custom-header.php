@@ -1,3 +1,7 @@
+<div class="loader">
+    <h2 class="titre">AlexandreKong</h2>
+    <div class="loading"></div>
+</div>
 <div class="customheader">
     <div class="rond">
         <div class="rond-centre"></div>
@@ -23,6 +27,9 @@
     <div class="logosvg"></div>
     <div class="logosvgroue"></div>
     <div class="name">
+        <div class="burgermenu">
+            <i class="fa fa-bars"></i>
+        </div>
         <div class="slogan">
             <h2>Alexandre<span style="color:#6db3e3">Kong</span></h2>
             <hr>
@@ -64,13 +71,13 @@
         		<?php endwhile; ?>
             <?php wp_reset_query(); ?>
         </div>
+    </div>
 
-        <!-- Bouton plus
-        ==================== -->
+    <!-- Bouton plus
+    ==================== -->
 
-        <div class="seemore">
-            <a href="#" class="hvr-buzz"><i class="fa fa-plus fa-2x"></i></a>
-        </div>
+    <div class="seemore">
+        <a href="<?php bloginfo('home') ?>/portfolio/" class="hello hvr-buzz"><i class="fa fa-angle-double-right fa-2x"></i></a>
     </div>
 
     <!--texte voir plus-->
@@ -85,13 +92,15 @@
             <?php $args = array( 'post_type' => 'portfolio', 'posts_per_page' => 3, 'orderby' =>'date','order' => 'DESC' ); ?>
             <?php $loop = new WP_Query( $args ); ?>
                 <?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
-                    <div class="item" style="background-image:url(<?php the_post_thumbnail_url() ?>)" data-hash="<?php the_ID() ?>">
-                        <div class="content-slide">
-                            <div class="in">
-                                <h2 class="titleslide"><?php the_title() ?></h2>
-                                <hr>
-                                <p class="description"><?php the_excerpt() ?></p>
-                                <a href="<?php the_permalink() ?>" class="custom-button-white hvr-underline-from-left">En découvrir plus<i class="fa fa-angle-right"></i></a>
+                    <div class="item" data-hash="<?php the_ID() ?>">
+                        <div class="ins" style="background-image:url(<?php the_post_thumbnail_url() ?>)">
+                            <div class="content-slide">
+                                <div class="in">
+                                    <h2 class="titleslide"><?php the_title() ?></h2>
+                                    <hr>
+                                    <p class="description"><?php the_excerpt() ?></p>
+                                    <a href="<?php the_permalink() ?>" class="custom-button-white hvr-underline-from-left moreportfolio">En découvrir plus<i class="fa fa-angle-right"></i></a>
+                                </div>
                             </div>
                         </div>
                     </div>

@@ -1,3 +1,7 @@
+::-webkit-scrollbar {
+    display: none;
+}
+
 .custom-button{
     @extend .button;
     border:2px solid black !important;
@@ -19,6 +23,7 @@
 .customheader{
     height:100%;
     width:100%;
+    opacity:0;
     position:relative;
 
     .inslide{
@@ -56,7 +61,7 @@
         left:0px;
         top:0px;
         z-index:40;
-        width:45%;
+        width:50%;
         height:100%;
         //background:white;
         padding-top:50px;
@@ -66,6 +71,7 @@
             font-family: "Montserrat";
             text-transform:uppercase;
             letter-spacing:2px;
+            display:none;
 
             ul{
                 margin:0;
@@ -131,12 +137,7 @@
             }
         }
 
-        .lastcreaz::-webkit-scrollbar {
-            display: none;
-        }
-
         .lastcrea{
-            overflow:scroll;
             position:absolute;
             left:0;
             bottom:0;
@@ -193,36 +194,6 @@
         }
     }
 
-    .seemore{
-        position:absolute;
-        width:50px;
-        height:50px;
-        background:white;
-        display:flex;
-        right:-25px;
-        bottom:20px;
-        //box-shadow:0px 0px 15px rgba(0,0,0,0.2);
-
-        a{
-            display:flex;
-            height:100%;
-            width:100%;
-
-            i{
-                margin:auto;
-                color:#CCC;
-                transition:0.5s;
-            }
-
-            &:hover{
-
-                i{
-                    color:black;
-                }
-            }
-        }
-    }
-
     .groszoom{
         transition:0.3s;
         width:50%;
@@ -241,58 +212,67 @@
             height:100%;
             width:100%;
             background-position:center;
+            overflow:hidden;
 
             .item{
-                background-size:cover;
                 height:100%;
                 width:100%;
-                background-position:center;
-                display:flex;
+                overflow:hidden;
 
-                .content-slide{
-                    margin-top:auto;
-                    margin-bottom:50px;
+                .ins{
+                    background-size:cover;
+                    height:100%;
                     width:100%;
-                    padding:20px;
-                    margin-left:auto;
-                    margin-right:auto;
-                    opacity:0;
+                    background-position:center;
+                    display:flex;
+                    overflow:hidden;
 
-                    hr{
-                        border:0;
-                        background:white;
-                        height:5px;
-                        max-width:100px;
+                    .content-slide{
+                        margin-top:auto;
+                        margin-bottom:50px;
+                        width:100%;
+                        padding:20px;
+                        margin-left:auto;
                         margin-right:auto;
-                        margin-left:0;
-                    }
+                        opacity:0;
+                        transition:0.3s;
 
-                    .custom-button-white{
-                        color:white;
-                        padding-bottom:5px;
-                        text-transform: uppercase;
-                        font-family:"Montserrat";
-                        position:relative;
-
-                        i{
-                            margin-left:40px;
-                        }
-
-                        &:hover{
-
-                        }
-
-                        &:before{
+                        hr{
+                            border:0;
                             background:white;
+                            height:5px;
+                            max-width:100px;
+                            margin-right:auto;
+                            margin-left:0;
                         }
-                    }
 
-                    .in{
-                        color:white;
-
-                        .titleslide{
+                        .custom-button-white{
+                            color:white;
+                            padding-bottom:5px;
                             text-transform: uppercase;
-                            font-family:"montserrat";
+                            font-family:"Montserrat";
+                            position:relative;
+
+                            i{
+                                margin-left:40px;
+                            }
+
+                            &:hover{
+
+                            }
+
+                            &:before{
+                                background:white;
+                            }
+                        }
+
+                        .in{
+                            color:white;
+
+                            .titleslide{
+                                text-transform: uppercase;
+                                font-family:"montserrat";
+                            }
                         }
                     }
                 }
@@ -305,6 +285,73 @@
                 //box-shadow:0px 0px 10px rgba(0,0,0,0.5);
             }
         }
+    }
+}
+
+.seemore{
+    position:absolute;
+    width:50px;
+    height:50px;
+    background:white;
+    display:flex;
+    left:0;
+    right:0;
+    margin:auto;
+    bottom:20px;
+    z-index:40;
+    border-radius: 50%;
+
+    a{
+        display:flex;
+        height:100%;
+        width:100%;
+
+        i{
+            margin:auto;
+            color:#CCC;
+            transition:0.5s;
+        }
+
+        &:hover{
+
+            i{
+                color:black;
+            }
+        }
+    }
+}
+
+.loader{
+    position:absolute;
+    width:100%;
+    height:100%;
+    background:black;
+    z-index:999;
+    top:0;
+    left:0;
+    display:flex;
+
+    .titre{
+        display:none;
+        font-family: "Montserrat";
+        color:white;
+        text-transform: uppercase;
+        position:absolute;
+        top:30px;
+        text-align: center;
+        left:0;
+        bottom:0;
+        right:0;
+        margin:auto;
+    }
+
+    .loading{
+        animation: rotate 1s infinite linear;
+        width:50px;
+        height:50px;
+        border-left:2px solid white;
+        border-radius: 50%;
+        margin:auto;
     }
 }
 
@@ -323,7 +370,14 @@
     width:100%;
 }
 
+.burgermenu{
+    position:absolute;
+    right:20px;
+    top:20px;
+    opacity:0.5;
+}
+
 .customize{
     transform:rotate(360deg);
-    transition:1s;
+    transition:1.5s;
 }

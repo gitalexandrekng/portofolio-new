@@ -1,0 +1,117 @@
+@keyframes rotate {
+  100% {
+    transform: rotateZ(360deg);
+  }
+}
+
+.rond{
+    position:absolute;
+    width:150px;
+    height:150px;
+    border-radius:50%;
+    top:0;right:0;left:0;bottom:0;
+    z-index:100;
+    margin:auto;
+
+    .rond-centre{
+        width:10px;
+        height:10px;
+        margin:auto;
+        top:0;left:0;right:0;bottom:0;
+        margin:auto;
+        background:white;
+        border-radius:50%;
+        position:absolute;
+    }
+
+    .rond-one{
+        animation: rotate 10s infinite linear;
+        width:100%;
+        height:100%;
+        margin:auto;
+        top:0;left:0;right:0;bottom:0;
+        margin:auto;
+        position:absolute;
+
+        .uno{
+            width:12px;
+            height:12px;
+            border-radius:50%;
+            background:white;
+            position:absolute;
+            left:-6px;
+            top:0;
+            bottom:0;
+            margin:auto;
+        }
+
+        .dos{
+            width:12px;
+            height:12px;
+            border-radius:50%;
+            background:white;
+            position:absolute;
+            right:-6px;
+            top:0;
+            bottom:0;
+            margin:auto;
+        }
+
+        .tres{
+            width:12px;
+            height:12px;
+            border-radius:50%;
+            background:white;
+            position:absolute;
+            left:0px;
+            right:0px;
+            top:-6px;
+            margin:auto;
+        }
+    }
+
+    .rond-two{
+        animation: rotate 5s infinite linear;
+        width:40%;
+        height:40%;
+        top:0;left:0;right:0;bottom:0;
+        margin:auto;
+        position:absolute;
+
+        .uno{
+            width:8px;
+            height:8px;
+            border-radius:50%;
+            background:white;
+            position:absolute;
+            left:-4px;
+            top:0;
+            bottom:0;
+            margin:auto;
+        }
+
+        .dos{
+            width:8px;
+            height:8px;
+            border-radius:50%;
+            background:white;
+            position:absolute;
+            right:-4px;
+            top:0;
+            bottom:0;
+            margin:auto;
+        }
+
+        .tres{
+            width:8px;
+            height:8px;
+            border-radius:50%;
+            background:white;
+            position:absolute;
+            left:0px;
+            right:0px;
+            top:-4px;
+            margin:auto;
+        }
+    }
+}

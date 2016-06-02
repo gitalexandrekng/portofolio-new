@@ -1,3 +1,21 @@
+.custom-button{
+    @extend .button;
+    border:2px solid black !important;
+    font-family:'Montserrat' !important;
+    background:transparent !important;
+    text-transform: uppercase;
+    color:black !important;
+    letter-spacing: 1px;
+
+    &:hover{
+        color:white !important;
+    }
+
+    &:before{
+        background:black;
+    }
+}
+
 .customheader{
     height:100%;
     width:100%;
@@ -6,10 +24,23 @@
     .inslide{
         background-size:cover;
         transition:0.5s;
+        filter: grayscale(100%);
     }
 
     .logosvg{
         background-image:url(../../images/forme.svg);
+        background-size:cover;
+        background-position:center;
+        width:100%;
+        height:100%;
+        position:absolute;
+        top:0;
+        left:0;
+        z-index:20;
+    }
+
+    .logosvgroue{
+        background-image:url(../../images/forme2.svg);
         background-size:cover;
         background-position:center;
         width:100%;
@@ -27,7 +58,7 @@
         z-index:40;
         width:45%;
         height:100%;
-        background:white;
+        //background:white;
         padding-top:50px;
         padding-left:50px;
 
@@ -50,7 +81,7 @@
             }
 
             ul{
-                margin:0;
+                margin:0px 0px 30px 0px;
 
                 li{
                     list-style-type: none;
@@ -58,7 +89,12 @@
             }
         }
 
+        .lastcreaz::-webkit-scrollbar {
+            display: none;
+        }
+
         .lastcrea{
+            overflow:scroll;
             position:absolute;
             left:0;
             bottom:0;
@@ -66,9 +102,19 @@
             padding:20px;
 
             .crea{
-                border-top:1px solid lighten(#CCC,10%);
+                //border-top:1px solid lighten(#CCC,10%);
                 margin-bottom:5px;
                 padding:20px 0px;
+                display:block;
+                color:black;
+                opacity:0.7;
+                transition: 0.3s;
+                margin-left:0;
+
+                &:hover{
+                    opacity:1;
+                    margin-left:20px;
+                }
 
                 .home-image-crea{
                     background-size:cover;
@@ -109,14 +155,126 @@
         bottom:20px;
         //box-shadow:0px 0px 15px rgba(0,0,0,0.2);
 
-        i{
-            margin:auto;
-            color:#CCC;
+        a{
+            display:flex;
+            height:100%;
+            width:100%;
+
+            i{
+                margin:auto;
+                color:#CCC;
+                transition:0.5s;
+            }
+
+            &:hover{
+
+                i{
+                    color:black;
+                }
+            }
         }
     }
+
+    .groszoom{
+        transition:0.3s;
+        width:50%;
+        position:absolute;
+        top:0;
+        right:0;
+        background:white;
+        z-index:30;
+        height:100%;
+        //border-left:1px solid white;
+        //box-shadow:0px 0px 20px rgba(255,255,255,0.5);
+        //border-left:5px solid white;
+
+        #zooms{
+            background-size:cover;
+            height:100%;
+            width:100%;
+            background-position:center;
+
+            .item{
+                background-size:cover;
+                height:100%;
+                width:100%;
+                background-position:center;
+                display:flex;
+
+                .content-slide{
+                    margin-top:auto;
+                    margin-bottom:50px;
+                    width:100%;
+                    padding:20px;
+                    margin-left:auto;
+                    margin-right:auto;
+
+                    hr{
+                        border:0;
+                        background:white;
+                        height:5px;
+                        max-width:100px;
+                        margin-right:auto;
+                        margin-left:0;
+                    }
+
+                    .custom-button-white{
+                        color:white;
+                        padding-bottom:5px;
+                        text-transform: uppercase;
+                        font-family:"Montserrat";
+                        position:relative;
+
+                        i{
+                            margin-left:40px;
+                        }
+
+                        &:hover{
+
+                        }
+
+                        &:before{
+                            background:white;
+                        }
+                    }
+
+                    .in{
+                        color:white;
+
+                        .titleslide{
+                            text-transform: uppercase;
+                            font-family:"montserrat";
+                        }
+                    }
+                }
+            }
+
+            .fade{
+                width:100%;
+                height:100%;
+                background:rgba(0,0,0,0);
+                //box-shadow:0px 0px 10px rgba(0,0,0,0.5);
+            }
+        }
+    }
+}
+
+.text-see{
+    position:absolute;
+    bottom:20px;
+    right:-10%;
+    z-index:30;
+    text-transform: uppercase;
+    transition:0.5s;
+    opacity:0;
 }
 
 .customcontent{
     height:100%;
     width:100%;
+}
+
+.customize{
+    transform:rotate(360deg);
+    transition:1s;
 }

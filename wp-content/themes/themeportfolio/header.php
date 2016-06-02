@@ -56,7 +56,9 @@
 		</nav>
 	</header>
 
-	<?php include('custom-header.php') ?>
+	<?php if (is_home()){
+		include('custom-header.php');
+	} ?>
 
 	<section class="container">
 		<?php do_action( 'foundationpress_after_header' );

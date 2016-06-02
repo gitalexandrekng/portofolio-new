@@ -27,6 +27,8 @@
 </div><!-- Close off-canvas content wrapper -->
 <?php endif; ?>
 
+<script src="<?php echo get_stylesheet_directory_uri() ?>/assets/components/owl.carousel/dist/owl.carousel.js"></script>
+<script src="<?php echo get_stylesheet_directory_uri() ?>/custom-js.js"></script>
 
 <?php wp_footer(); ?>
 <?php do_action( 'foundationpress_before_closing_body' ); ?>

@@ -1,0 +1,122 @@
+.customheader{
+    height:100%;
+    width:100%;
+    position:relative;
+
+    .inslide{
+        background-size:cover;
+        transition:0.5s;
+    }
+
+    .logosvg{
+        background-image:url(../../images/forme.svg);
+        background-size:cover;
+        background-position:center;
+        width:100%;
+        height:100%;
+        position:absolute;
+        top:0;
+        left:0;
+        z-index:20;
+    }
+
+    .name{
+        position:absolute;
+        left:0px;
+        top:0px;
+        z-index:40;
+        width:45%;
+        height:100%;
+        background:white;
+        padding-top:50px;
+        padding-left:50px;
+
+        .slogan{
+            font-family:"Playfair Display";
+            font-size:18px;
+
+            h2{
+                font-family: "Montserrat";
+                text-transform:uppercase;
+            }
+
+            hr{
+                border:0;
+                background:black;
+                height:5px;
+                width:50px;
+                margin-right:auto;
+                margin-left:0;
+            }
+
+            ul{
+                margin:0;
+
+                li{
+                    list-style-type: none;
+                }
+            }
+        }
+
+        .lastcrea{
+            position:absolute;
+            left:0;
+            bottom:0;
+            width:100%;
+            padding:20px;
+
+            .crea{
+                border-top:1px solid lighten(#CCC,10%);
+                margin-bottom:5px;
+                padding:20px 0px;
+
+                .home-image-crea{
+                    background-size:cover;
+                    height:100px;
+                    width:100%;
+                }
+
+                .home-texte-crea{
+                    display:flex;
+                    height:100%;
+
+                    .in{
+                        margin:auto;
+                        width:100%;
+
+                        .home-crea-title{
+                            font-family:"Montserrat";
+                            font-size:18px;
+                            text-transform: uppercase;
+                        }
+
+                        .texte{
+                            font-family: "Roboto";
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .seemore{
+        position:absolute;
+        width:50px;
+        height:50px;
+        background:white;
+        display:flex;
+        right:-25px;
+        bottom:20px;
+        //box-shadow:0px 0px 15px rgba(0,0,0,0.2);
+
+        i{
+            margin:auto;
+            color:#CCC;
+        }
+    }
+}
+
+.customcontent{
+    height:100%;
+    width:100%;
+}

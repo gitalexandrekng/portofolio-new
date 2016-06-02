@@ -33,6 +33,13 @@
             </ul>
             <a href="#" class="custom-button hvr-bounce-to-top">Qui suis-je ?</a>
         </div>
+        <div class="other">
+            <ul>
+                <li class="sociallink"><div class="icon"><i class="fa fa-trophy"></i></div><a href="#">Certifications</a></li>
+                <li class="sociallink"><div class="icon"><i class="fa fa-graduation-cap"></i></div><a href="#">Formation</a></li>
+                <li class="sociallink"><div class="icon"><i class="fa fa-phone"></i></div><a href="#">Contact</a></li>
+            </ul>
+        </div>
 
         <!-- DERNIERes
         ===================-->

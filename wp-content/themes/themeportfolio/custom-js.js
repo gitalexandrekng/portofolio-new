@@ -22,6 +22,7 @@ $('#zooms').owlCarousel({
     autoplayTimeout: 5000,
     URLhashListener:true,
     mouseDrag:false,
+    startPosition: 'URLHash'
 });
 
 if($('.customheader').length){
@@ -40,20 +41,39 @@ $('.seemore').hover(function(){
     $(this).css('width', '45%')
 })*/
 
+$('.sociallink').hover(function(){
+    $(this).find('i').css({color:'#666'})
+}, function(){
+    $(this).find('i').css({color:''})
+})
+
+$('.crea:first').addClass('active')
+
 $('.crea').on('click', function(){
+    $('.crea').removeClass('active')
+    $(this).addClass('active')
     $('.logosvgroue').addClass('customize')
     setTimeout(function(){
         $('.logosvgroue').removeClass('customize')
     }, 1000)
 })
 
-/*$('.crea').on('click', function(){
-    clearInterval(x);
+$('.crea').on('click', function(){
+    setTimeout(function(){
+        $('.content-slide').css('opacity', 0)
+        $('.crea').css('pointer-events', 'none')
 
-    var x = setTimeout(function(){
-        $('.content-slide .in').addClass('animated fadeOut')
         setTimeout(function(){
-            $('.content-slide .in').removeClass('animated fadeOut')
-        }, 1000)
-    }, 1000);
-})*/
+            $('.content-slide').addClass('animated fadeInUp')
+
+            setTimeout(function(){
+                $('.content-slide').css('opacity', '1').removeClass('animated fadeInUp')
+            }, 1000)
+
+        }, 1000);
+    }, 1)
+
+    setTimeout(function(){
+        $('.crea:not(.active)').css('pointer-events', 'auto')
+    }, 2000)
+})

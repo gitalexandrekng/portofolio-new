@@ -6,6 +6,71 @@
     }
 }
 
+.retour{
+    position:absolute;
+    left:10px;
+    top:10px;
+
+    a{
+        color:#666;
+
+        &:hover{
+            color:#000;
+        }
+    }
+}
+
+.singlebutton{
+    display:flex;
+    color:lighten(#CCC, 5%);
+    font-family:"Montserrat";
+    text-transform: uppercase;
+
+    .textleft{
+        height:50px;
+        width:50px;
+        display:flex;
+
+        .roundup{
+            width:40px;
+            height:40px;
+            margin:auto;
+            border:2px solid #CCC;
+            border-radius: 50%;
+            display: flex;
+            transition:0.3s;
+
+            i{
+                margin:auto;
+            }
+        }
+    }
+
+    .textright{
+        margin-top:12px;
+        margin-left:10px;
+        color:#666;
+    }
+
+    &:hover{
+        color:darken(#CCC,10%);
+
+        .textleft{
+            .roundup{
+                transform:rotate(360deg);
+                border-radius:50%;
+                border:2px solid #666;
+                height:45px;
+                width:45px;
+            }
+        }
+
+        .textright{
+            color:black;
+        }
+    }
+}
+
 .slide{
     width:100%;
     height:100%;
@@ -20,12 +85,18 @@
         .zer{
             width:100%;
             height:100%;
+            position:relative;
             display:flex;
-            background: radial-gradient(rgba(0,0,0,0), rgba(0,0,0,0.2));
+            background: radial-gradient(rgba(0,0,0,0), rgba(114,171,230,0.4));
 
             .ins{
                 margin:auto;
                 max-width:1200px;
+                padding:20px;
+
+                .des{
+                    margin-bottom:20px;
+                }
             }
         }
     }

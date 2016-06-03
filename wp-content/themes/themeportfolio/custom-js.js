@@ -14,6 +14,15 @@ $(window).load(function(){
     }, 1000)
 })
 
+$('.retour a').on('click', function(e){
+    e.preventDefault()
+    var self = $(this);
+    $('body').addClass('animated fadeOutRight')
+    setTimeout(function(){
+        window.location.href = self.attr('href');
+    },1000)
+})
+
 $('body').ready(function(){
     $('.inslide').css({height: $(window).height(), width: $(window).width()})
     $('#zooms .item .ins').css({height: $(window).height(), width: $(window).width() / 2})

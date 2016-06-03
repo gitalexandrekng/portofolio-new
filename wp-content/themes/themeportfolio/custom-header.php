@@ -34,11 +34,10 @@
             <h2>Alexandre<span style="color:#6db3e3">Kong</span></h2>
             <hr>
             <ul>
-                <li>Graphic & webdesigner</li>
-                <li>Intégrateur</li>
+                <li>Graphic & webdesigner / Intégrateur</li>
                 <li>Développeur frontend / backend</li>
             </ul>
-            <a href="#" class="custom-button hvr-bounce-to-top">Qui suis-je ?</a>
+            <a href="<?php bloginfo('home') ?>/presentation-alexandre-k-webdesigner/" class="custom-button hvr-bounce-to-top fadeall">Qui suis-je ?</a>
         </div>
         <div class="other">
             <ul>
@@ -52,12 +51,12 @@
         ===================-->
 
         <div class="lastcrea">
-            <?php $args = array( 'post_type' => 'portfolio', 'posts_per_page' => 3, 'orderby' =>'date','order' => 'DESC' ); ?>
+            <?php $args = array( 'post_type' => 'portfolio', 'posts_per_page' => 4, 'orderby' =>'date','order' => 'DESC' ); ?>
             <?php $loop = new WP_Query( $args ); ?>
                 <?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
                     <a class="row crea" href="#<?php the_ID() ?>" data-equalizer>
                         <div class="small-4 columns" data-equalizer-watch>
-                            <div class="home-image-crea" style="background-image:url(<?php the_post_thumbnail_url() ?>)"></div>
+                            <div class="home-image-crea" style="background-image:url(<?php the_post_thumbnail_url('medium') ?>)"></div>
                         </div>
                         <div class="small-8 columns" data-equalizer-watch>
                             <div class="home-texte-crea">

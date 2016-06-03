@@ -9,6 +9,9 @@ $(window).load(function(){
     }, 2000)
 
     $('.container').addClass('animated fadeIn')
+    setTimeout(function(){
+        $('.container').removeClass('animated fadeIn').css('opacity', '1')
+    }, 1000)
 })
 
 $('body').ready(function(){
@@ -39,6 +42,10 @@ $('#zooms').owlCarousel({
 });
 
 if($('.customheader').length){
+    $('body').css('overflow', 'hidden')
+}
+
+if($('.presentation').length){
     $('body').css('overflow', 'hidden')
 }
 
@@ -104,6 +111,24 @@ $("a.moreportfolio[href]").click(function(e){
     setTimeout(function(){
         $('body').addClass('animated fadeOut')
     },1000)
+    setTimeout(function(){
+        window.location.href = self.attr('href');
+    }, 2000)
+});
+
+$("a.fadeall[href]").click(function(e){
+    e.preventDefault()
+    var self = $(this);
+    $('.groszoom').css({width:'0%', transition:'0.5s'})
+    setTimeout(function(){
+        $('.name').css({width:'0%', opacity:'0', transition:'0.5s'})
+        $('.logosvgroue').css({transform:'rotate(360deg)', transition:'1s'})
+
+        setTimeout(function(){
+            $('.customheader').addClass('animated fadeOut')
+        }, 1000)
+    }, 500)
+
     setTimeout(function(){
         window.location.href = self.attr('href');
     }, 2000)

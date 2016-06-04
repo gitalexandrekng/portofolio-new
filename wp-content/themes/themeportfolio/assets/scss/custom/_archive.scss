@@ -1,0 +1,72 @@
+.current-title{
+    text-align: center;
+    font-family: "Montserrat";
+    text-transform: uppercase;
+}
+
+.views{
+    margin:auto;
+    text-align: center;
+    margin-bottom:50px;
+}
+
+.archiveportfolio{
+    //background:lighten(#8cc9e2, 15%);
+    height:100vh;
+    padding:20px;
+
+    .in{
+        background:white;
+        height:100%;
+        padding-top:20px;
+
+        .thecontain{
+            display:block;
+            overflow:hidden;
+            position:relative;
+
+            .titre{
+                position:absolute;
+                bottom:0;left:0;right:0;top:0;
+                text-align: center;
+                color:white;
+                height:100%;width:100%;
+                font-size:22px;
+                display:flex;
+
+                .ina{
+                    margin:auto;
+                    opacity:0;
+                    font-family: 'Montserrat';
+                    text-transform: uppercase;
+
+                    .ino{
+                        font-family:"Ubuntu Condensed";
+                        font-size:16px;
+                    }
+                }
+            }
+
+            .image-portfolio{
+                background-size:cover;
+                height:300px;
+                background-position:center;
+                transition: 0.3s;
+
+                .fade{
+                    width:100%;
+                    height:100%;
+                    background:black;
+                    opacity:0;
+                    transition:0.3s;
+                    display:flex;
+                }
+
+                /*&:hover{
+                    transform:scale(1.5);
+                    filter:grayscale(100%);
+                }*/
+            }
+        }
+    }
+}

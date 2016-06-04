@@ -7,12 +7,12 @@
 .views{
     margin:auto;
     text-align: center;
-    margin-bottom:50px;
+    margin-bottom:20px;
 }
 
 .archiveportfolio{
     //background:lighten(#8cc9e2, 15%);
-    height:100vh;
+    min-height:100vh;
     padding:20px;
 
     .in{
@@ -20,10 +20,22 @@
         height:100%;
         padding-top:20px;
 
+        .menu-customnav-container{
+            margin-bottom:50px;
+            display:flex;
+            #menu-customnav{
+                margin:auto;
+
+                li{
+                }
+            }
+        }
+
         .thecontain{
             display:block;
             overflow:hidden;
             position:relative;
+            margin-bottom:30px;
 
             .titre{
                 position:absolute;

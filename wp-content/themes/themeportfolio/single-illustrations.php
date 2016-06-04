@@ -35,31 +35,20 @@ get_header(); ?>
     		<?php do_action( 'foundationpress_post_before_entry_content' ); ?>
     		<div class="entry-content">
     		    <div class="zer">
-                    <div class="row caract">
-                        <div class="medium-4 columns">
-                            <div class="carac">
-                                <strong>Caractéristique</strong>:<br>
-                                Webdesign
-                            </div>
-                        </div>
-                        <div class="medium-4 columns">
-                            <div class="carac">
-                                <strong>Caractéristique</strong>:<br>
-                                Webdesign
-                            </div>
-                        </div>
-                        <div class="medium-4 columns">
-                            <div class="carac">
-                                <strong>Caractéristique</strong>:<br>
-                                Webdesign
-                            </div>
-                        </div>
-                    </div>
+
+                    <!-- Titre -->
+                    <h3 class="subtitle"><?php the_excerpt() ?></h3>
+                    <hr>
     		        <?php the_content(); ?>
     		    </div>
+                <div class="galleryphoto">
+                    <img src="<?php the_field('galerie_photo'); ?>" alt="" />
+                </div>
     		</div>
+            <?php include('custom-footer.php'); ?>
     	</article>
     <?php endwhile;?>
+
 	</div>
 
 <?php do_action( 'foundationpress_after_content' ); ?>

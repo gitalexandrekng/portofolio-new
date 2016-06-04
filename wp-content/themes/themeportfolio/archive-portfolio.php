@@ -21,8 +21,17 @@ get_header(); ?>
 	<div class="in">
         <h2 class="current-title">AlexandreKong</h2>
         <div class="views">Graphic & webdesigner<br>Intégrateur / développeur front, backend</div>
+        <nav class="archiveportfolionav">
+            <?php wp_nav_menu( array( 'theme_location' => 'header-menu' ) ); ?>
+        </nav>
+        <div class="boutonfiltre">
+            <button class="hvr-bounce-to-top buttonchange allz">Tout</button>
+            <button class="hvr-bounce-to-top buttonchange sites">Sites</button>
+            <button class="hvr-bounce-to-top buttonchange illus">Illustrations</button>
+            <button class="hvr-bounce-to-top buttonchange photographies">Photographies</button>
+        </div>
     	<article class="main-content">
-            <div class="row">
+            <div class="row" id="oeuvres">
                 <?php if ( have_posts() ) : ?>
 
                     <?php /* Start the Loop */ ?>
@@ -46,5 +55,6 @@ get_header(); ?>
     	</article>
 	</div>
 </div>
+<?php include('custom-footer.php'); ?>
 
 <?php get_footer();

@@ -9,9 +9,10 @@
  */
 
 ?>
+<?php $yes = wpdocs_custom_taxonomies_terms_links(); ?>
 
-<div id="post-<?php the_ID(); ?>" <?php post_class('blogpost-entry large-4 columns'); ?>>
-    <a href="<?php the_permalink() ?>" class="thecontain fadepartiel">
+<div id="post-<?php the_ID(); ?>" <?php post_class('blogpost-entry large-4 columns end mix '.$yes.''); ?>>
+    <a href="<?php the_permalink() ?>" class="thecontain fadebas">
 		<div class="image-portfolio" style="background-image:url(<?php the_post_thumbnail_url('large') ?>)">
             <div class="fade">
             </div>
@@ -20,6 +21,7 @@
             <div class="ina">
                 <?php the_title() ?>
                 <div class="ino"><?php the_excerpt() ?></div>
+                <div class="cat"><?php echo wpdocs_custom_taxonomies_terms_links(); ?></div>
             </div>
 
         </div>

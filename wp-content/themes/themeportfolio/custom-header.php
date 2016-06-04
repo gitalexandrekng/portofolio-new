@@ -39,7 +39,7 @@
         </div>
 
         <div class="slogan">
-            <h2>Alexandre<span style="color:#6db3e3">Kong</span></h2>
+            <h2>Alexandre<span style="color:#c0392b">Kong</span></h2>
             <hr>
             <ul>
                 <li>Graphic & webdesigner / Intégrateur</li>
@@ -68,7 +68,7 @@
         ===================-->
 
         <div class="lastcrea">
-            <?php $args = array( 'post_type' => 'portfolio', 'posts_per_page' => 4, 'orderby' =>'date','order' => 'DESC' ); ?>
+            <?php $args = array( 'post_type' => 'portfolio', 'posts_per_page' => 3, 'orderby' =>'date','order' => 'DESC' ); ?>
             <?php $loop = new WP_Query( $args ); ?>
                 <?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
                     <a class="row crea" href="#<?php the_ID() ?>">
@@ -129,22 +129,4 @@
         </div>
     </div>
 
-</div>
-
-
-
-
-
-
-
-
-
-
-
-<!---
-OHTER
-===============-->
-
-<div id="hello" class="customcontent">
-    ddezdze
 </div>

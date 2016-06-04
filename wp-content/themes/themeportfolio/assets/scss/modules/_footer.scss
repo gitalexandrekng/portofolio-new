@@ -14,3 +14,13 @@
 		}
 	}
 }
+
+.myfooter{
+	margin-top:150px;
+	position:relative;
+	z-index:500;
+	width:100%;
+	color:black;
+	padding:20px;
+	background:lighten(#CCC, 15%);
+}

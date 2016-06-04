@@ -20,7 +20,7 @@ get_header(); ?>
                     </div>
                     <div class="row">
                         <div class="medium-4 columns">
-                            <a href="#" class="singlebutton">
+                            <a href="<?php bloginfo('home') ?>/portfolio" class="singlebutton fadepartiel">
                                 <div class="textleft">
                                     <div class="roundup">
                                         <i class="fa fa-camera"></i>
@@ -30,7 +30,7 @@ get_header(); ?>
                             </a>
                         </div>
                         <div class="medium-4 columns">
-                            <a href="#" class="singlebutton">
+                            <a href="<?php bloginfo('home') ?>/formation" class="singlebutton fadepartiel">
                                 <div class="textleft">
                                     <div class="roundup">
                                         <i class="fa fa-graduation-cap"></i>
@@ -40,7 +40,7 @@ get_header(); ?>
                             </a>
                         </div>
                         <div class="medium-4 columns">
-                            <a href="#" class="singlebutton">
+                            <a href="#" class="singlebutton fadepartiel">
                                 <div class="textleft">
                                     <div class="roundup">
                                         <i class="fa fa-phone"></i>

@@ -14,15 +14,10 @@
 
 		<?php do_action( 'foundationpress_layout_end' ); ?>
 
-<?php if ( get_theme_mod( 'wpt_mobile_menu_layout' ) == 'offcanvas' ) : ?>
-		</div><!-- Close off-canvas wrapper inner -->
-	</div><!-- Close off-canvas wrapper -->
-</div><!-- Close off-canvas content wrapper -->
-<?php endif; ?>
-
 <script src="<?php echo get_stylesheet_directory_uri() ?>/assets/components/owl.carousel/dist/owl.carousel.js"></script>
 <script src="<?php echo get_stylesheet_directory_uri() ?>/custom-js.js"></script>
 <script src="<?php echo get_stylesheet_directory_uri() ?>/js-presentation.js"></script>
+<script src="<?php echo get_stylesheet_directory_uri() ?>/assets/components/mixitup/src/jquery.mixitup.js"></script>
 
 <?php wp_footer(); ?>
 <?php do_action( 'foundationpress_before_closing_body' ); ?>

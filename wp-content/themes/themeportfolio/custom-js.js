@@ -21,6 +21,27 @@ $(window).load(function(){
     }
 })
 
+$('.allz').on('click', function(){
+    $('.mix').removeClass('remove')
+})
+
+$('.sites').on('click', function(){
+    $('.mix').removeClass('remove')
+    $('.mix:not(.portfolio-site-internet)').addClass('remove')
+})
+
+$('.illus').on('click', function(){
+    $('.mix').removeClass('remove')
+    $('.mix:not(.portfolio-illustrations)').addClass('remove')
+})
+
+$('.photographies').on('click', function(){
+    $('.mix').removeClass('remove')
+    $('.mix:not(.portfolio-photographies)').addClass('remove')
+})
+
+$('.archiveportfolionav li a').addClass('fadebas')
+
 $('.retour a').on('click', function(e){
     e.preventDefault()
     var self = $(this);
@@ -167,9 +188,23 @@ $("a.fadeall[href]").click(function(e){
 $("a.fadepartiel[href]").click(function(e){
     e.preventDefault()
     var self = $(this);
-    $('.fademe').addClass('animated fadeOut')
+    $('body').addClass('animated fadeOut')
 
     setTimeout(function(){
         window.location.href = self.attr('href');
+    }, 1000)
+});
+
+$("a.fadebas[href]").click(function(e){
+    e.preventDefault()
+    var self = $(this);
+    $('.main-content').addClass('animated fadeOutDown')
+
+    setTimeout(function(){
+        $('body').addClass('animated fadeOut')
+
+        setTimeout(function(){
+            window.location.href = self.attr('href');
+        }, 1000)
     }, 1000)
 });

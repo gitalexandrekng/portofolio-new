@@ -1,3 +1,30 @@
+.customentry{
+    padding:0px !important;
+
+    .yoz{
+        background-size:cover;
+        height:250px;
+
+        a{
+            display:block;
+            height:100%;
+            width:100%;
+        }
+    }
+}
+
+.customsingle{
+    padding:0px !important;
+
+    ul{
+        margin:0;
+
+        li{
+            list-style-type: none;
+        }
+    }
+}
+
 .singleimage{
     width:100%;
     height:100vh;
@@ -47,6 +74,13 @@
 .galleryphoto{
     text-align:center;
     margin-top:50px;
+    max-width:1200px;
+    margin-left:auto;
+    margin-right:auto;
+
+    @include breakpoint(medium down) {
+        padding:15px;
+    }
 }
 
 .singlecontent{
@@ -156,6 +190,7 @@
         .zer{
             max-width:1200px;
             margin:auto;
+            padding:20px;
 
             .subtitle{
                 text-align:center;
@@ -171,30 +206,13 @@
     }
 }
 
-.remove{
-    display:none;
-    transition:0.5s;
+.mix{
+    transition: 0.3s;
 }
 
-.boutonfiltre{
-    text-align:center;
-    margin-bottom:30px;
-
-    .buttonchange{
-        font-family:"Montserrat";
-        margin-left:10px;
-        margin-right:10px;
-        border:2px solid black;
-        padding:10px 20px;
-        transition:0.3s;
-        text-transform: uppercase;
-
-        &:before{
-            background:black;
-        }
-
-        &:hover{
-            color:white;
-        }
-    }
+.remove{
+    transition:0.3s;
+    opacity:0.2;
+    filter:grayscale(100%);
+    pointer-events: none;
 }

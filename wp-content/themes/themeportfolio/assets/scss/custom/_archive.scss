@@ -13,20 +13,219 @@
 .archiveportfolio{
     //background:lighten(#8cc9e2, 15%);
     min-height:100vh;
-    padding:20px;
+    //padding:20px;
 
     .in{
         background:white;
         height:100%;
-        padding-top:20px;
+        position:relative;
 
-        .menu-customnav-container{
-            margin-bottom:50px;
+        .portfoliotitle{
+            background:#1d1d1d;
+            padding-top:50px;
+            padding-bottom:50px;
             display:flex;
-            #menu-customnav{
+
+            @include breakpoint(small down) {
+                .boutonfiltre{
+                    margin-left:0 !important;
+                    margin-right:auto !important;
+
+                    .buttonchange{
+                        display:block;
+                    }
+                }
+            }
+
+            .boutonfiltre{
+                text-align:center;
                 margin:auto;
 
-                li{
+                .buttonchange{
+                    font-family:"Montserrat";
+                    margin-left:10px;
+                    margin-right:10px;
+                    color:#CCC;
+                    padding:10px 20px;
+                    transition:0.3s;
+                    text-transform: uppercase;
+
+                    &:before{
+                        background:#CCC;
+                    }
+
+                    &:active{
+                        color:black;
+                    }
+
+                    &:focus{
+                        color:black;
+                    }
+
+                    &:hover{
+                        color:black;
+                    }
+                }
+            }
+        }
+
+        .containerheader{
+            position:relative;
+            background:#272727;
+            padding-bottom:50px;
+
+            .showresponsive{
+                display:none;
+
+                ul{
+                    li{
+                        display:block;
+                    }
+                }
+            }
+
+            .titzc{
+                position:relative;
+                color:white;
+                display:flex;
+                border:2px solid white;
+                max-width:400px;
+                margin:auto;
+                padding-top:10px;
+
+                @include breakpoint(medium down) {
+                    position:relative;
+                }
+
+                @include breakpoint(medium down) {
+                    position:relative;
+                }
+
+                @include breakpoint(small down) {
+                    margin-top:20px;
+                    max-width:300px;
+                }
+
+                .titz{
+                    margin:auto;
+
+                    h3{
+                        font-family:"Montserrat";
+                        text-transform: uppercase;
+                        letter-spacing: 2px;
+                    }
+                }
+            }
+
+            .flexed{
+                width:100%;
+                display:flex;
+
+                .leftheader{
+
+                    .slogan{
+                        font-size:18px;
+                        padding-top:50px;
+                        padding-left:50px;
+                        padding-bottom:50px;
+                        color:white;
+
+                        @include breakpoint(medium down) {
+                            padding-top:20px;
+                            padding-left:20px;
+                            padding-bottom:20px;
+                        }
+
+                        h2{
+                            font-family: "Montserrat";
+                            text-transform:uppercase;
+                            font-size:22px;
+                        }
+
+                        hr{
+                            border:0;
+                            background:white;
+                            height:5px;
+                            width:50px;
+                            margin-right:auto;
+                            margin-left:0;
+                            margin-top:0;
+                            margin-bottom:10px;
+                        }
+
+                        ul{
+                            margin:0px 0px 0px 0px;
+
+                            @include breakpoint(medium down) {
+                                font-size:12px;
+                            }
+
+                            li{
+                                list-style-type: none;
+                            }
+                        }
+                    }
+                }
+
+                .rightheader{
+                    flex:1;
+                    display: flex;
+                    position:relative;
+                    z-index:10;
+
+                    nav{
+                        margin-left:auto;
+                        padding-top:50px;
+                        padding-right:50px;
+                        font-family: "Montserrat";
+                        text-transform: uppercase;
+
+                        @include breakpoint(medium down) {
+                            padding-top:20px;
+                            padding-right:20px;
+                            font-size:12px;
+                        }
+
+                        @include breakpoint(small down) {
+                            padding-top:20px;
+                            padding-right:20px;
+
+                            .menu-customnav-container{
+                                display:none;
+                            }
+
+                            .shownav{
+                                i{
+                                    display:block !important;
+                                }
+                            }
+                        }
+
+                        .shownav{
+                            i{
+                                color:white;
+                                display:none;
+                            }
+                        }
+
+                        .menu-customnav-container{
+                            margin:auto;
+
+                            #menu-customnav{
+                                margin:auto;
+
+                                li{
+
+                                    a{
+                                        text-transform: uppercase;
+                                        font-family:"Montserrat";
+                                        padding:0;
+                                        margin:0px 15px;
+                                    }
+                                }
+                            }
+                        }
+                    }
                 }
             }
         }
@@ -35,7 +234,6 @@
             display:block;
             overflow:hidden;
             position:relative;
-            margin-bottom:30px;
 
             .titre{
                 position:absolute;

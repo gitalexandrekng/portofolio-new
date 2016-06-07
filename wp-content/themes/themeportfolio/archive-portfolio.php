@@ -19,24 +19,50 @@ get_header(); ?>
 
 <div class="archiveportfolio fademe">
 	<div class="in">
-        <h2 class="current-title">AlexandreKong</h2>
-        <div class="views">Graphic & webdesigner<br>Intégrateur / développeur front, backend</div>
-        <nav class="archiveportfolionav">
-            <?php wp_nav_menu( array( 'theme_location' => 'header-menu' ) ); ?>
-        </nav>
-        <div class="boutonfiltre">
-            <button class="hvr-bounce-to-top buttonchange allz">Tout</button>
-            <button class="hvr-bounce-to-top buttonchange sites">Sites</button>
-            <button class="hvr-bounce-to-top buttonchange illus">Illustrations</button>
-            <button class="hvr-bounce-to-top buttonchange photographies">Photographies</button>
+
+        <!-- TITRE -->
+        <div class="containerheader">
+            <div class="flexed">
+                <div class="leftheader">
+                    <div class="slogan">
+                        <h2>Alexandre<span style="color:#c0392b">Kong</span></h2>
+                    </div>
+                </div>
+                <div class="rightheader">
+                    <nav class="archiveportfolionav">
+                        <?php wp_nav_menu( array( 'theme_location' => 'header-menu' ) ); ?>
+                        <button class="shownav"><i class="fa fa-bars"></i></button>
+                    </nav>
+                </div>
+            </div>
+            <div class="showresponsive">
+                <?php wp_nav_menu( array( 'theme_location' => 'header-menu' ) ); ?>
+            </div>
+            <div class="titzc">
+                <div class="titz">
+                    <h3 class="Portfolio">Portfolio</h3>
+                </div>
+            </div>
         </div>
-    	<article class="main-content">
-            <div class="row" id="oeuvres">
+
+        <!-- Titre -->
+        <div class="portfoliotitle">
+            <div class="boutonfiltre">
+                <button class="hvr-bounce-to-top buttonchange allz">Tout</button>
+                <button class="hvr-bounce-to-top buttonchange sites">Sites</button>
+                <button class="hvr-bounce-to-top buttonchange illus">Illustrations</button>
+                <button class="hvr-bounce-to-top buttonchange photographies">Photographies</button>
+            </div>
+        </div>
+
+        <!-- Contenu -->
+        <article class="main-content">
+            <div class="row fullwidth small-collapse oeuvres">
                 <?php if ( have_posts() ) : ?>
 
                     <?php /* Start the Loop */ ?>
                     <?php while ( have_posts() ) : the_post(); ?>
-                        <?php get_template_part( 'template-parts/portfolio_archive', get_post_format() ); ?>
+                        <?php get_template_part( 'template-parts/content-portfolio', get_post_format() ); ?>
                     <?php endwhile; ?>
 
                     <?php else : ?>
@@ -52,7 +78,7 @@ get_header(); ?>
                         </nav>
                     <?php } ?>
             </div>
-    	</article>
+        </article>
 	</div>
 </div>
 <?php include('custom-footer.php'); ?>

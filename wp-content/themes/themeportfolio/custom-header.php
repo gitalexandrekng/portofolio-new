@@ -1,10 +1,11 @@
 <div class="loader">
-    <h2 class="titre">AlexandreKong</h2>
-    <div class="loading"></div>
+    <div class="in">
+        <h2 class="titre">Alexandre<span class="red">Kong</span></h2>
+        <div class="loading"></div>
+    </div>
 </div>
 
 <div class="customheader">
-
     <div class="rond">
         <div class="rond-centre"></div>
         <div class="rond-one">
@@ -34,9 +35,6 @@
     <!-- Side bar left
     ====================-->
     <div class="name">
-        <div class="burgermenu">
-            <i class="fa fa-bars"></i>
-        </div>
 
         <div class="slogan">
             <h2>Alexandre<span style="color:#c0392b">Kong</span></h2>
@@ -46,6 +44,14 @@
                 <li>Développeur frontend / backend</li>
             </ul>
             <a href="<?php bloginfo('home') ?>/presentation-alexandre-k-webdesigner/" class="custom-button hvr-bounce-to-top fadeall">Qui suis-je ?</a>
+        </div>
+
+        <div class="social">
+            <ul>
+                <li><a href="#"><i class="fa fa-twitter fa-2x"></i></a></li>
+                <li><a href="https://www.instagram.com/alexandrekfr/" target="_blank"><i class="fa fa-instagram fa-2x"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/alexandre-kong-7758b6113"><i class="fa fa-linkedin fa-2x"></i></a></li>
+            </ul>
         </div>
 
         <div class="other">
@@ -71,13 +77,13 @@
             <?php $args = array( 'post_type' => 'portfolio', 'posts_per_page' => 3, 'orderby' =>'date','order' => 'DESC' ); ?>
             <?php $loop = new WP_Query( $args ); ?>
                 <?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
-                    <a class="row crea" href="#<?php the_ID() ?>">
-                        <div class="small-4 columns">
+                    <a class="row crea" href="#<?php the_ID() ?>" data-equalizer>
+                        <div class="small-4 columns" data-equalizer-watch>
                             <div class="home-image-crea" style="background-image:url(<?php the_post_thumbnail_url('medium') ?>)">
                                 <div class="arrowsee"><i class="fa fa-angle-right fa-2x"></i></div>
                             </div>
                         </div>
-                        <div class="small-8 columns">
+                        <div class="small-8 columns" data-equalizer-watch>
                             <div class="home-texte-crea">
                                 <div class="in">
                                     <h3 class="home-crea-title"><?php the_title() ?></h3>
@@ -128,5 +134,29 @@
             <?php wp_reset_query(); ?>
         </div>
     </div>
+</div>
 
+<div class="responsivehome">
+    <div class="fade">
+        <div class="in">
+            <div class="title"><h1>Alexandre<span class="red">Kong</span></h1></div>
+            <div class="slo">
+                Webdesigner / intégrateur / développeur
+            </div>
+            <div class="link">
+                <ul>
+                    <li><a class="fadepartiel" href="<?php bloginfo('home') ?>/portfolio">Portfolio</a></li>
+                    <li><a class="fadepartiel" href="<?php bloginfo('home') ?>/presentation-alexandre-k-webdesigner/">Qui suis-je ?</a></li>
+                    <li><a class="fadepartiel" href="<?php bloginfo('home') ?>/contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="social">
+                <ul>
+                    <li><a href="" target="_blank"><i class="fa fa-twitter fa-2x"></i></a></li>
+                    <li><a href="" target="_blank"><i class="fa fa-instagram fa-2x"></i></a></li>
+                    <li><a href="" target="_blank"><i class="fa fa-linkedin fa-2x"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
 </div>

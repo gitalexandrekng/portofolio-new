@@ -11,7 +11,7 @@
 ?>
 <?php $yes = wpdocs_custom_taxonomies_terms_links(); ?>
 
-<div id="post-<?php the_ID(); ?>" <?php post_class('blogpost-entry large-4 columns end mix '.$yes.''); ?>>
+<div id="post-<?php the_ID(); ?>" <?php post_class('blogpost-entry large-4 medium-6 columns end mix noremove'); ?>>
     <a href="<?php the_permalink() ?>" class="thecontain fadebas">
 		<div class="image-portfolio" style="background-image:url(<?php the_post_thumbnail_url('large') ?>)">
             <div class="fade">

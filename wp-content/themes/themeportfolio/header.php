@@ -18,10 +18,10 @@
 		<link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri() ?>/assets/components/owl.carousel/dist/assets/owl.carousel.min.css" media="screen" title="no title" charset="utf-8">
 		<link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri() ?>/assets/components/animate.css/animate.min.css" media="screen" title="no title" charset="utf-8">
 		<link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri() ?>/assets/components/hover/css/hover-min.css" media="screen" title="no title" charset="utf-8">
-		<link href='https://fonts.googleapis.com/css?family=Playfair+Display' rel='stylesheet' type='text/css'>
 		<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
 		<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
 		<link href='https://fonts.googleapis.com/css?family=Ubuntu+Condensed' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
 		<?php wp_head(); ?>
 	</head>
 	<body <?php body_class(); ?>>
@@ -29,6 +29,13 @@
 	<?php do_action( 'foundationpress_after_body' ); ?>
 
 	<?php do_action( 'foundationpress_layout_start' ); ?>
+
+	<div class="loader">
+	    <div class="in">
+	        <h2 class="titre">Alexandre<span class="red">Kong</span></h2>
+	        <div class="loading"></div>
+	    </div>
+	</div>
 
 	<div class="fixednav">
 		<div class="tiw">

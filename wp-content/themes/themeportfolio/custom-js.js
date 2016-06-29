@@ -6,7 +6,7 @@ $(window).load(function(){
             $('.customheader').addClass('animated fadeIn')
             $('.content-slide').css('opacity', 1)
         },0)
-    }, 1000)
+    }, 10)
 
     $('.container').addClass('animated fadeIn')
 

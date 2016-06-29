@@ -1,11 +1,7 @@
-<div class="loader">
-    <div class="in">
-        <h2 class="titre">Alexandre<span class="red">Kong</span></h2>
-        <div class="loading"></div>
-    </div>
-</div>
-
 <div class="customheader">
+
+    <!-- ******************* ANINMATION ROND
+    =========================================================== -->
     <div class="rond">
         <div class="rond-centre"></div>
         <div class="rond-one">
@@ -51,22 +47,6 @@
                 <li><a href="#"><i class="fa fa-twitter fa-2x"></i></a></li>
                 <li><a href="https://www.instagram.com/alexandrekfr/" target="_blank"><i class="fa fa-instagram fa-2x"></i></a></li>
                 <li><a href="https://www.linkedin.com/in/alexandre-kong-7758b6113"><i class="fa fa-linkedin fa-2x"></i></a></li>
-            </ul>
-        </div>
-
-        <div class="other">
-            <ul>
-                <li class="sociallink"><div class="icon"><i class="fa fa-trophy"></i></div><a href="#">Certifications</a></li>
-                <li class="sociallink"><div class="icon"><i class="fa fa-graduation-cap"></i></div><a href="#">Formation</a></li>
-                <li class="sociallink"><div class="icon"><i class="fa fa-phone"></i></div><a href="#">Contact</a></li>
-            </ul>
-        </div>
-
-        <div class="others">
-            <ul>
-                <li class="linksocial"><div class="icon"><i class="fa fa-trophy"></i></div><a href="#" class="fadeall">Certifications</a></li>
-                <li class="linksocial"><div class="icon"><i class="fa fa-graduation-cap"></i></div><a href="#" class="fadeall">Formation</a></li>
-                <li class="linksocial"><div class="icon"><i class="fa fa-phone"></i></div><a href="#" class="fadeall">Contact</a></li>
             </ul>
         </div>
 

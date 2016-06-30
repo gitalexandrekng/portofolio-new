@@ -1,6 +1,5 @@
 .presentation{
     min-height:100vh;
-    padding-bottom:50px;
 
     .containerheader{
         position:relative;
@@ -43,7 +42,9 @@
                 margin:auto;
 
                 h3{
+                    font-family:"Montserrat";
                     text-transform: uppercase;
+                    letter-spacing: 2px;
                 }
             }
         }
@@ -68,6 +69,7 @@
                     }
 
                     h2{
+                        font-family: "Montserrat";
                         text-transform:uppercase;
                         font-size:22px;
                     }
@@ -164,8 +166,8 @@
         padding-top:50px;
         padding-bottom:50px;
         color:white;
-        background:#1d1d1d;
         text-align: center;
+        background:#1d1d1d;
 
         .in{
             max-width:1200px;
@@ -174,6 +176,7 @@
 
             h4{
                 text-transform: uppercase;
+                letter-spacing:3px;
             }
 
             hr{
@@ -185,18 +188,15 @@
         }
     }
 
-    .zer{
-        //background:#f7f4f2;
-        //border-top:1px solid #CCC;
-        padding-bottom:60px;
-    }
-
     .formation{
+        text-align: center;
         padding-top:50px;
-        padding-bottom:0px;
+        padding-bottom:50px;
 
         .cl{
+            margin-right:5px;
             font-family:"Montserrat";
+            margin-top:30px;
             display:block;
         }
 
@@ -242,84 +242,8 @@
             }
         }
 
-        .liste-certifs{
-
-            .koi{
-                padding-right:5px;
-            }
-
-            .iok{
-                padding-left:5px;
-            }
-
-            .inliste{
-                display:inline-block;
-                vertical-align: top;
-                width:50%;
-                height:100%;
-                text-align: center;
-                margin-bottom:10px;
-
-                .zoulou{
-                    //background:lighten(#CCC,18%);
-                    padding:20px 10px;
-                    width: 100%;
-                    height:100%;
-                    display:flex;
-
-                    .inzoulou{
-                        margin:auto;
-                        width: 100%;
-                    }
-                }
-            }
-        }
-
         .oc{
             display:block;
-        }
-
-        .pcertifs{
-            display:block;
-            background:lighten($primary-color,0%);
-            position:relative;
-            max-width:100%;
-            text-align: center;
-            margin: 20px auto 0px auto;
-            border-radius: 3px;
-            font-family: "Oswald";
-            text-transform: uppercase;
-            padding:20px;
-            color:white;
-
-            .icon{
-                position:absolute;
-                left:20px;
-                top:0;
-                bottom:0;
-                display:flex;
-
-                i{
-                    color:white;
-                    margin: auto;
-                }
-            }
-        }
-
-        .parcours{
-            margin-top:30px;
-            text-align: center;
-            margin-bottom:50px;
-
-            img{
-                width:60%;
-                margin-bottom:20px;
-            }
-
-            h3{
-                font-size:20px;
-                text-transform: uppercase;
-            }
         }
 
         #langues{
@@ -329,7 +253,7 @@
             }
         }
 
-        .certifs{
+        #certifs{
             margin:0;
 
             li{
@@ -342,23 +266,19 @@
             }
         }
 
-        /*hr{
+        hr{
             width:30px;
             border:0;
             height:3px;
-            margin:10px auto 10px 0px;
+            /*margin-right:auto;
+            margin-left:0;*/
+            margin:15px auto;
             background:$primary-color;
-            display: none;
-        }*/hr{
-            border:0;
-            height:2px;
-            margin:10px auto 10px 0px;
-            background:lighten(#666,45%);
-            display:none;
         }
 
         h4{
             text-transform: uppercase;
+            letter-spacing:3px;
         }
     }
 
@@ -367,6 +287,7 @@
         padding-top:50px;
         padding-bottom:50px;
         color:white;
+        text-align: center;
 
         .mycomp{
             ul{
@@ -388,29 +309,20 @@
             }
         }
 
-        .otherh4{
-            text-transform: uppercase;
-        }
-
         h4{
             text-transform: uppercase;
+            letter-spacing:3px;
         }
 
         .in{
             max-width:1200px;
             margin:auto;
 
-            .titre{
-                font-size:42px;
-                margin-bottom:50px;
-            }
-
             hr{
                 width:30px;
                 border:0;
                 height:3px;
                 background:white;
-                margin-left:0;
             }
 
             .picz{
@@ -419,6 +331,7 @@
 
             h6{
                 text-transform: uppercase;
+                letter-spacing: 3px;
             }
         }
     }

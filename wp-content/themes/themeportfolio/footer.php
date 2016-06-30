@@ -10,8 +10,7 @@
 
 ?>
 
-			</section>
-		</div>
+		</section>
 
 		<?php do_action( 'foundationpress_layout_end' ); ?>
 

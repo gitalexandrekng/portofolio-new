@@ -33,15 +33,13 @@
     <div class="name">
 
         <div class="slogan">
-            <h2>Alexandre<span style="color:#c0392b">Kong</span><i class="fa fa-angle-right"></i>
-                <a href="<?php bloginfo('home') ?>/presentation-alexandre-k-webdesigner/" class="whois hvr-grow-shadow fadeall">Qui suis-je ?</a>
-            </h2>
+            <h2>Alexandre<span style="color:#c0392b">Kong</span></h2>
             <hr>
             <ul>
                 <li>Graphic & webdesigner / Intégrateur</li>
                 <li>Développeur frontend / backend</li>
             </ul>
-            <!--<a href="<?php bloginfo('home') ?>/presentation-alexandre-k-webdesigner/" class="custom-button hvr-bounce-to-top fadeall">Qui suis-je ?</a>-->
+            <a href="<?php bloginfo('home') ?>/presentation-alexandre-k-webdesigner/" class="custom-button hvr-bounce-to-top fadeall">Qui suis-je ?</a>
         </div>
 
         <div class="social">
@@ -118,4 +116,27 @@
     </div>
 </div>
 
-<?php include("responsive.php"); ?>
+<div class="responsivehome">
+    <div class="fade">
+        <div class="in">
+            <div class="title"><h1>Alexandre<span class="red">Kong</span></h1></div>
+            <div class="slo">
+                Webdesigner / intégrateur / développeur
+            </div>
+            <div class="link">
+                <ul>
+                    <li><a class="fadepartiel" href="<?php bloginfo('home') ?>/portfolio">Portfolio</a></li>
+                    <li><a class="fadepartiel" href="<?php bloginfo('home') ?>/presentation-alexandre-k-webdesigner/">Qui suis-je ?</a></li>
+                    <li><a class="fadepartiel" href="<?php bloginfo('home') ?>/contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="social">
+                <ul>
+                    <li><a href="" target="_blank"><i class="fa fa-twitter fa-2x"></i></a></li>
+                    <li><a href="" target="_blank"><i class="fa fa-instagram fa-2x"></i></a></li>
+                    <li><a href="" target="_blank"><i class="fa fa-linkedin fa-2x"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>

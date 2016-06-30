@@ -41,10 +41,8 @@ get_header(); ?>
             </div>
         </div>
     </div>
-
-
     <div class="row formation">
-        <div class="medium-4 columns">
+        <div class="medium-6 columns">
             <h4>Formation</h4>
             <hr>
             <ul id="forma">
@@ -61,9 +59,17 @@ get_header(); ?>
                     <span>MJM Graphic design</span>
                 </li>
             </ul>
-        </div>
-        <div class="medium-4 columns">
-            <h4>Langues</h4>
+
+            <h4 style="margin-top:70px;">Expériences</h4>
+            <hr>
+            <ul id="exp">
+                <li>
+                    2015 - 2016 : Webdesigner<br>
+                    <span>IRCAD - WeBSurg</span>
+                </li>
+            </ul>
+
+            <h4 style="margin-top:70px;">Langues</h4>
             <hr>
             <div id="langues">
                 <span class="rowcolumn">
@@ -79,145 +85,58 @@ get_header(); ?>
                 <span class="rowcolumn"><strong>ALLEMAND</strong> : Scolaire</span>
             </div>
         </div>
-        <div class="medium-4 columns">
-            <h4>Expériences</h4>
+        <div class="medium-6 columns">
+            <h4>Certifications</h4>
             <hr>
-            <ul id="exp">
-                <li>
-                    2015 - 2016 : Webdesigner<br>
-                    <span>IRCAD - WeBSurg</span>
-                </li>
+            <span class="oc">OpenClassrooms</span>
+            <span class="cl cl-css">[HTML / CSS]</span>
+            <ul id="certifs">
+                <li>Prenez en main Bootstrap</li>
+                <li>Apprenez à créer votre site web avec HTML5 et CSS3</li>
+                <li>Découper et intégrer une maquette</li>
             </ul>
-        </div>
-    </div>
-
-    <div class="zer">
-        <div class="row formation">
-            <div class="small-12 columns">
-                <h4>Diplômes</h4>
-                <hr>
-                <span class="oc">OpenClassrooms</span>
-            </div>
-            <div class="large-4 columns respclass">
-                <span class="pcertifs">
-                    <div class="icon"><i class="fa fa-graduation-cap fa-2x"></i></div>
-                    Parcours certifiants
-                </span>
-                <div class="parcours">
-                    <h3>Intégrateur web</h3>
-                    <img src="<?php echo get_stylesheet_directory_uri() ?>/images/inte.png" alt="">
-                </div>
-            </div>
-            <div class="large-8 columns">
-                <span class="pcertifs">
-                    <div class="icon"><i class="fa fa-trophy fa-2x"></i></div>
-                    Certifications
-                </span>
-
-                <!-- Liste des certifications
-                ========================= -->
-
-                <div class="liste-certifs" style="margin-top:15px;">
-
-                    <div class="inliste koi">
-                        <div class="zoulou">
-                            <div class="inzoulou">
-                                <span class="cl cl-css">[HTML / CSS]</span>
-                                <ul class="certifs">
-                                    <li>Prenez en main Bootstrap</li>
-                                    <li>Apprenez à créer votre site web avec HTML5 et CSS3</li>
-                                    <li>Découper et intégrer une maquette</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div><!--
-                    --><div class="inliste iok">
-                        <div class="zoulou">
-                            <div class="inzoulou">
-                                <span class="cl cl-git">[GIT]</span>
-                                <ul class="certifs">
-                                    <li>Gérer son code avec Git et GitHub</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div><!--
-                    --><div class="inliste koi">
-                        <div class="zoulou">
-                            <div class="inzoulou">
-                                <span class="cl cl-php">[PHP]</span>
-                                <ul class="certifs">
-                                    <li>Concevez votre site web avec PHP et MySQL</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div><!--
-                    --><div class="inliste iok">
-                        <div class="zoulou cms-section">
-                            <div class="inzoulou">
-                                <span class="cl cl-cms">[CMS]</span>
-                                <ul class="certifs">
-                                    <li>Créez votre premier site avec WordPress</li>
-                                    <li>Découvrez les solutions CMS</li>
-                                    <li>Réalisez des sites modernes et beaux grâce à WordPress</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div><!--
-                    --><div class="inliste koi">
-                        <div class="zoulou">
-                            <div class="inzoulou">
-                                <span class="cl cl-js">[JS]</span>
-                                <ul class="certifs">
-                                    <li>Introduction à jQuery</li>
-                                    <li>Coder avec javascript</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div><!--
-                    --><div class="inliste iok">
-                        <div class="zoulou">
-                            <div class="inzoulou">
-                                <span class="cl cl-em">[eMailing]</span>
-                                <ul class="certifs">
-                                    <li>Réussir sa campagne d'e-mailing avec MailChimp</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div><!--
-                    --><div class="inliste koi">
-                        <div class="zoulou">
-                            <div class="inzoulou">
-                                <span class="cl cl-seo">[SEO]</span>
-                                <ul class="certifs">
-                                    <li>Les clés pour réussir son référencement web</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div><!--
-                    --><div class="inliste iok">
-                        <div class="zoulou">
-                            <div class="inzoulou">
-                                <span class="cl cl-web">[WEB]</span>
-                                <ul class="certifs">
-                                    <li>Comprendre le Web</li>
-                                    <li>Apprenez à naviguer en sécurité sur Internet</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
+            <span class="cl cl-git">[GIT]</span>
+            <ul id="certifs">
+                <li>Gérer son code avec Git et GitHub</li>
+            </ul>
+            <span class="cl cl-php">[PHP]</span>
+            <ul id="certifs">
+                <li>Concevez votre site web avec PHP et MySQL</li>
+            </ul>
+            <span class="cl cl-cms">[CMS]</span>
+            <ul id="certifs">
+                <li>Créez votre premier site avec WordPress</li>
+                <li>Découvrez les solutions CMS</li>
+                <li>Réalisez des sites modernes et beaux grâce à WordPress</li>
+            </ul>
+            <span class="cl cl-js">[JS]</span>
+            <ul id="certifs">
+                <li>Introduction à jQuery</li>
+            </ul>
+            <span class="cl cl-em">[eMailing]</span>
+            <ul id="certifs">
+                <li>Réussir sa campagne d'e-mailing avec MailChimp</li>
+            </ul>
+            <span class="cl cl-seo">[SEO]</span>
+            <ul id="certifs">
+                <li>Les clés pour réussir son référencement web</li>
+            </ul>
+            <span class="cl cl-web">[WEB]</span>
+            <ul id="certifs">
+                <li>Comprendre le Web</li>
+                <li>Apprenez à naviguer en sécurité sur Internet</li>
+            </ul>
         </div>
     </div>
 
     <div class="row compz fullwidth">
         <div class="small-12 columns">
             <div class="in">
-                <h4 class="titre">Compétences</h4>
-                <div class="row">
+                <h4>Compétences</h4>
+                <hr>
+                <div class="row" style="margin-top:80px;">
                     <div class="medium-4 columns">
-                        <h4 class="otherh4">Webdesign</h4>
+                        <h4>Webdesign</h4>
                         <img class="picz" src="<?php echo get_stylesheet_directory_uri() ?>/images/monitor.svg" alt="">
                         <div class="mycomp">
                             <ul>
@@ -233,7 +152,7 @@ get_header(); ?>
                         </div>
                     </div>
                     <div class="medium-4 columns">
-                        <h4 class="otherh4">Intégration</h4>
+                        <h4>Intégration</h4>
                         <img class="picz" src="<?php echo get_stylesheet_directory_uri() ?>/images/eye.svg" alt="">
                         <div class="mycomp">
                             <ul>
@@ -249,7 +168,7 @@ get_header(); ?>
                         </div>
                     </div>
                     <div class="medium-4 columns">
-                        <h4 class="otherh4">Développement</h4>
+                        <h4>Développement</h4>
                         <img class="picz" src="<?php echo get_stylesheet_directory_uri() ?>/images/cloud-computing.svg" alt="">
                         <div class="mycomp">
                             <ul>

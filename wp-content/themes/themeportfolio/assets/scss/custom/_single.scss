@@ -13,12 +13,6 @@
     }
 }
 
-.respclass{
-    @include breakpoint(small down){
-        margin-top:60px;
-    }
-}
-
 .customsingle{
     padding:0px !important;
 
@@ -135,7 +129,6 @@
                         margin-left:10px;
                         padding-right:15px;
                         text-transform: uppercase;
-                        margin-bottom:15px;
                     }
                 }
             }

@@ -6,7 +6,7 @@ $(window).load(function(){
             $('.customheader').addClass('animated fadeIn')
             $('.content-slide').css('opacity', 1)
         },0)
-    }, 10)
+    }, 100)
 
     $('.container').addClass('animated fadeIn')
 
@@ -20,6 +20,8 @@ $(window).load(function(){
         }, 700)
     }
 })
+
+$(".zoulou").css("min-height", $('.cms-section').outerHeight())
 
 $('.allz').on('click', function(){
     $('.mix').removeClass('remove')
@@ -40,7 +42,7 @@ $('.photographies').on('click', function(){
     $('.mix:not(.portfolio-photographies)').addClass('remove')
 })
 
-$('.archiveportfolionav li a').addClass('fadebas')
+$('.archiveportfolionav li a').addClass('fadepartiel')
 
 $('.retour a').on('click', function(e){
     e.preventDefault()
@@ -105,8 +107,13 @@ $('#zooms').owlCarousel({
     startPosition: 'URLHash'
 });
 
-$('#certifs li').prepend('<i class="fa fa-angle-right"></i>')
-$('#certifs li').append('<i class="fa fa-angle-left"></i>')
+$('.burgermenuz').on('click', function(e){
+    e.preventDefault();
+    $('.link').toggle('slow');
+})
+
+/*$('#certifs li').prepend('<i class="fa fa-angle-right"></i>')
+$('#certifs li').append('<i class="fa fa-angle-left"></i>')*/
 
 $('.wpcf7-submit').addClass('custom-button hvr-bounce-to-top')
 

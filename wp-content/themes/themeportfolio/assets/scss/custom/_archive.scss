@@ -247,12 +247,22 @@
                 .ina{
                     margin:auto;
                     opacity:0;
-                    font-family: 'Montserrat';
+                    font-family: "Oswald";
                     text-transform: uppercase;
+                    padding: 50px;
+
+                    .int{
+                        color:$primary-color;
+                    }
 
                     .ino{
                         font-family:"Ubuntu Condensed";
                         font-size:16px;
+                    }
+
+                    .cat{
+                        font-size:14px;
+                        font-family: "Montserrat";
                     }
                 }
             }
@@ -271,11 +281,6 @@
                     transition:0.3s;
                     display:flex;
                 }
-
-                /*&:hover{
-                    transform:scale(1.5);
-                    filter:grayscale(100%);
-                }*/
             }
         }
     }

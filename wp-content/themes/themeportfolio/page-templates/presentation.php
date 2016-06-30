@@ -85,44 +85,57 @@ get_header(); ?>
                 <span class="rowcolumn"><strong>ALLEMAND</strong> : Scolaire</span>
             </div>
         </div>
-        <div class="medium-6 columns">
-            <h4>Certifications</h4>
+        <div class="medium-6 columns respclass">
+            <h4>Diplômes</h4>
             <hr>
             <span class="oc">OpenClassrooms</span>
+            <span class="pcertifs">
+                <div class="icon"><i class="fa fa-graduation-cap fa-2x"></i></div>
+                Parcours certifiants
+            </span>
+            <div class="parcours">
+                <h3>Intégrateur web</h3>
+                <img src="<?php echo get_stylesheet_directory_uri() ?>/images/inte.png" alt="">
+            </div>
+            <span class="pcertifs">
+                <div class="icon"><i class="fa fa-trophy fa-2x"></i></div>
+                Certifications
+            </span>
             <span class="cl cl-css">[HTML / CSS]</span>
-            <ul id="certifs">
+            <ul class="certifs">
                 <li>Prenez en main Bootstrap</li>
                 <li>Apprenez à créer votre site web avec HTML5 et CSS3</li>
                 <li>Découper et intégrer une maquette</li>
             </ul>
             <span class="cl cl-git">[GIT]</span>
-            <ul id="certifs">
+            <ul class="certifs">
                 <li>Gérer son code avec Git et GitHub</li>
             </ul>
             <span class="cl cl-php">[PHP]</span>
-            <ul id="certifs">
+            <ul class="certifs">
                 <li>Concevez votre site web avec PHP et MySQL</li>
             </ul>
             <span class="cl cl-cms">[CMS]</span>
-            <ul id="certifs">
+            <ul class="certifs">
                 <li>Créez votre premier site avec WordPress</li>
                 <li>Découvrez les solutions CMS</li>
                 <li>Réalisez des sites modernes et beaux grâce à WordPress</li>
             </ul>
             <span class="cl cl-js">[JS]</span>
-            <ul id="certifs">
+            <ul class="certifs">
                 <li>Introduction à jQuery</li>
+                <li>Coder avec javascript</li>
             </ul>
             <span class="cl cl-em">[eMailing]</span>
-            <ul id="certifs">
+            <ul class="certifs">
                 <li>Réussir sa campagne d'e-mailing avec MailChimp</li>
             </ul>
             <span class="cl cl-seo">[SEO]</span>
-            <ul id="certifs">
+            <ul class="certifs">
                 <li>Les clés pour réussir son référencement web</li>
             </ul>
             <span class="cl cl-web">[WEB]</span>
-            <ul id="certifs">
+            <ul class="certifs">
                 <li>Comprendre le Web</li>
                 <li>Apprenez à naviguer en sécurité sur Internet</li>
             </ul>

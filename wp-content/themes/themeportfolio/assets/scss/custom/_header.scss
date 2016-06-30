@@ -39,15 +39,14 @@
 
 .custom-button{
     @extend .button;
-    border:2px solid black !important;
+    border:0px solid black !important;
     font-family:'Montserrat' !important;
     background:transparent !important;
     text-transform: uppercase;
     color:black !important;
-    letter-spacing: 1px;
 
     &:hover{
-        color:white !important;
+        color:black !important;
     }
 
     &:before{
@@ -102,71 +101,6 @@
                     font-family:"Montserrat";
                     padding:0;
                     margin:0px 15px;
-                }
-            }
-        }
-    }
-}
-
-.responsivehome{
-    @include breakpoint(medium up) {
-        display:none;
-    }
-
-    position:absolute;
-    background:url(../../images/2.jpg);
-    top:0;
-    left:0;
-    height:100vh;
-    width:100vw;
-    text-align:center;
-    display:flex;
-    color:white;
-
-    .fade{
-        display:flex;
-        height:100%;
-        width:100%;
-        background:rgba(0,0,0,0.7);
-
-        .in{
-            margin:auto;
-
-            .link{
-                ul{
-                    margin:30px 0px 0px 0px;
-                    li{
-                        margin-top:10px;
-                        text-transform: uppercase;
-                        list-style-type: none;
-                        font-family:'Montserrat';
-                    }
-                }
-            }
-
-            .social{
-                margin-top:50px;
-
-                ul{
-                    margin:0;
-
-                    li{
-                        display: inline-block;
-                        margin-left:20px;
-                        margin-right:20px;
-
-                        a{
-                            color:white;
-                        }
-                    }
-                }
-            }
-
-            h1{
-                text-transform: uppercase;
-
-                .red{
-                    color:$primary-color;
                 }
             }
         }
@@ -344,10 +278,32 @@
             font-size:18px;
             padding:30px 0px 0px 30px;
 
+            .whois{
+                margin-bottom:5px !important;
+                margin-left:8px;
+                padding:7px 10px !important;
+                font-size:14px;
+                font-family: "montserrat";
+                transition: 0.2s;
+
+                &:hover{
+                    background:$primary-color;
+                    color:white;
+                    border-radius: 3px;
+                }
+            }
+
             h2{
                 font-family: "Oswald";
                 text-transform:uppercase;
                 font-size:22px;
+                position:relative;
+
+                i{
+                    margin-left:13px;
+                    position:relative;
+                    top:-2px;
+                }
             }
 
             hr{
@@ -367,7 +323,7 @@
                 li{
                     list-style-type: none;
                     font-family: "Roboto";
-                    font-size:12px;
+                    font-size:14px;
                 }
             }
         }

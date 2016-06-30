@@ -2,6 +2,38 @@
     display: none;
 }
 
+.wrapper{
+    padding:40px;
+    position:relative;
+
+    .wrappertopandbottom{
+        width:100vw;
+        height:100vh;
+        position:fixed;
+        z-index:999;
+        top:0;
+        left:0;
+
+        .top{
+            height:40px;
+            width:100vw;
+            background:white;
+            position:absolute;
+            top:0;
+            left:0;
+        }
+
+        .bottom{
+            height:40px;
+            width:100vw;
+            background:white;
+            position:absolute;
+            bottom:0;
+            left:0;
+        }
+    }
+}
+
 .page-error{
 
     h1{
@@ -285,11 +317,14 @@
                 font-size:14px;
                 font-family: "montserrat";
                 transition: 0.2s;
+                background:$primary-color;
+                color: #FFF;
+                border-radius: 3px;
 
                 &:hover{
-                    background:$primary-color;
+                    background:lighten($primary-color, 10%);
                     color:white;
-                    border-radius: 3px;
+
                 }
             }
 

@@ -21,6 +21,8 @@ $(window).load(function(){
     }
 })
 
+$(".zoulou").css("min-height", $('.cms-section').outerHeight())
+
 $('.allz').on('click', function(){
     $('.mix').removeClass('remove')
 })

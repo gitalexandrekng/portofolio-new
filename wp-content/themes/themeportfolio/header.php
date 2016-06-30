@@ -48,5 +48,10 @@
 		include('custom-header.php');
 	} ?>
 
-	<section class="container" style="opacity:0">
-		<?php do_action( 'foundationpress_after_header' );
+	<div class="wrapper">
+        <div class="wrappertopandbottom">
+            <div class="top"></div>
+            <div class="bottom"></div>
+        </div>
+		<section class="container" style="opacity:0">
+			<?php do_action( 'foundationpress_after_header' );

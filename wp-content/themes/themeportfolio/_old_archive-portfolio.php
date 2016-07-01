@@ -17,16 +17,27 @@
 
 get_header(); ?>
 
-<nav class="archiveportfolionav" style="display:none">
-	<?php wp_nav_menu( array( 'theme_location' => 'header-menu' ) ); ?>
-	<button class="shownav"><i class="fa fa-bars"></i></button>
-</nav>
-
 <div class="archiveportfolio fademe">
 	<div class="in">
 
         <!-- TITRE -->
         <div class="containerheader">
+            <div class="flexed">
+                <div class="leftheader">
+                    <div class="slogan">
+                        <h2>Alexandre<span style="color:#c0392b">Kong</span></h2>
+                    </div>
+                </div>
+                <div class="rightheader">
+                    <nav class="archiveportfolionav">
+                        <?php wp_nav_menu( array( 'theme_location' => 'header-menu' ) ); ?>
+                        <button class="shownav"><i class="fa fa-bars"></i></button>
+                    </nav>
+                </div>
+            </div>
+            <div class="showresponsive">
+                <?php wp_nav_menu( array( 'theme_location' => 'header-menu' ) ); ?>
+            </div>
             <div class="titzc">
                 <div class="titz">
                     <h3 class="Portfolio">Portfolio</h3>

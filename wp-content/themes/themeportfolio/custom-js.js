@@ -17,7 +17,7 @@ $(window).load(function(){
     if($('.singlecontent').length){
         setTimeout(function(){
             $('.entry-title').addClass('animated fadeInUp')
-        }, 700)
+        }, 850)
     }
 })
 

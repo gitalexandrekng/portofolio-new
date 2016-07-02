@@ -11,7 +11,6 @@
 ?>
 
 			</section>
-		</div>
 
 		<?php do_action( 'foundationpress_layout_end' ); ?>
 

@@ -15,12 +15,112 @@
 
 .colored-description{
     min-height:300px;
+    background:#fafafa;
     padding:50px 0px;
+    position:relative;
+
+    .sep{
+        width:1px;
+        height:80px;
+        background:#CCC;
+        position:absolute;
+        margin:auto;
+        left:0;
+        right:0;
+        bottom:-60px;
+        display: block;
+    }
 
     h2{
         text-transform: uppercase;
         font-size:22px;
         text-align: center;
+    }
+
+    .detailproject{
+        color:#666;
+
+        .titletype{
+            text-transform: uppercase;
+            margin-bottom:10px;
+            font-weight: bold;
+            font-size:20px;
+            text-align: center;
+        }
+
+        .ta{
+            li{
+                list-style-type: none;
+
+                i{
+                    margin-right:10px;
+                }
+            }
+        }
+
+        .insingle{
+            background:#f2f2f2;
+            padding:10px;
+            text-align: center;
+            margin-bottom:15px;
+        }
+    }
+}
+
+.linknavigation{
+    max-width:1200px;
+    margin:auto;
+    height:100px;
+    display:flex;
+
+    .icon{
+        transition:0.3s;
+        border:2px solid lighten(#CCC,10%);
+        height:40px;
+        width:40px;
+        border-radius: 50%;
+        display:flex;
+        margin:auto 0;
+
+        i{
+            margin:auto;
+            color: #CCC;
+        }
+    }
+
+    .link{
+        margin:auto 15px auto 15px;
+    }
+
+    .left{
+        margin-right:auto;
+        display:flex;
+    }
+
+    .middle{
+        margin:auto;
+
+        a{
+            background:$primary-color !important;
+            margin:0 !important;
+            font-size:14px;
+            font-family: "Montserrat";
+            transition: 0.2s;
+            color:#FFF;
+            padding:7px 10px !important;
+            border-radius: 3px;
+
+            &:hover{
+                background:lighten($primary-color, 10%);
+                color:white;
+
+            }
+        }
+    }
+
+    .right{
+        margin-left:auto;
+        display:flex;
     }
 }
 
@@ -88,7 +188,7 @@
 
 .galleryphoto{
     text-align:center;
-    margin-top:50px;
+    margin-top:20px;
     max-width:1200px;
     margin-left:auto;
     margin-right:auto;
@@ -107,6 +207,7 @@
 
     .linkproject{
         text-align: center;
+        margin-bottom:30px;
 
         a{
 
@@ -167,7 +268,7 @@
     .comeback{
         display:flex;
         color:#CCC;
-
+        margin-top:20px;
 
         &:hover{
             color:#666;
@@ -197,7 +298,7 @@
     }
 
     .entry-content{
-        padding-top:100px;
+        padding-top:10px;
         padding-bottom:100px;
         width:100%;
 

@@ -24,13 +24,55 @@ get_header(); ?>
     /
     ============================= -->
 
-	<div class="colored-description" style="background:<?php the_field('couleurs'); ?>;color:<?php the_field('couleur_decriture'); ?>">
+	<div class="colored-description">
+        <div class="sep"></div>
         <div class="row">
             <div class="small-12 columns">
                 <h2><?php the_excerpt() ?></h2>
+                <div class="linkproject">
+    				<a href="<?php the_field('link'); ?>"><i class="fa fa-link"></i> <?php the_field('link'); ?></a>
+    			</div>
+                <div class="detailproject">
+                    <div class="titletype">Type de projet :</div>
+                    <div class="row">
+                        <?php
+
+							$values = get_field('type');
+							if($values)
+							{
+								foreach($values as $value)
+								{
+									echo '<div class="small-4 columns end"><div class="insingle">' . $value . '</div></div>';
+								}
+							}
+
+						?>
+                    </div>
+                    <div class="row" style="margin-top:50px">
+                        <div class="medium-6 columns">
+                            <div class="titletype">Mon rôle :</div>
+                            <ul class="ta">
+                                <?php
+
+        							$values = get_field('role');
+        							if($values)
+        							{
+        								foreach($values as $value)
+        								{
+        									echo '<li><i class="fa fa-angle-right"></i>' . $value . '</li>';
+        								}
+        							}
+
+        						?>
+                            </ul>
+                        </div>
+                        <div class="medium-6 columns">
+                            <div class="titletype">Client et cahier des charges :</div>
+                            <div><?php the_field('client'); ?></div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="small-6 columns">dzdedze</div>
-            <div class="small-6 columns">dzdedze</div>
         </div>
 	</div>
 
@@ -50,66 +92,31 @@ get_header(); ?>
 
 
 	<?php do_action( 'foundationpress_post_before_entry_content' ); ?>
+
+    <!-- DÉBUT DU CONTENU
+    /
+    ============================= -->
 	<div class="entry-content">
-		<div class="zer">
 
-			<!-- Titre -->
-			<h3 class="subtitle"><?php the_excerpt() ?></h3>
-			<hr>
-			<div class="linkproject">
-				<a href="<?php the_field('link'); ?>"><i class="fa fa-link"></i> <?php the_field('link'); ?></a>
-			</div>
-			<div class="row caract">
-				<div class="medium-12 columns">
-					<div class="carac type">
-						<strong>TYPE</strong>
-						<p><?php
+        <!-- Image avec les typos et tout
+        -->
 
-							$values = get_field('type');
-							if($values)
-							{
-								echo '<ul>';
-
-								foreach($values as $value)
-								{
-									echo '<li>' . $value . '</li>';
-								}
-
-								echo '</ul>';
-							}
-
-						?></p>
-					</div>
-				</div>
-				<div class="medium-12 columns">
-					<div class="carac role">
-						<div class="inl">
-							<strong>Mon rôle</strong><br>
-							<p><?php
-
-								$values = get_field('role');
-								if($values)
-								{
-									echo '<ul>';
-
-									foreach($values as $value)
-									{
-										echo '<li>' . $value . '</li>';
-									}
-
-									echo '</ul>';
-								}
-
-							?></p>
-						</div>
-					</div>
-				</div>
-			</div>
-			<?php the_content(); ?>
-		</div>
-		<div class="galleryphoto">
+        <div class="galleryphoto">
 			<img src="<?php the_field('galerie_photo'); ?>" alt="" />
 		</div>
+
+        <!-- Et le contenu
+        ==-->
+        <div class="row">
+            <div class="small-12 columns">
+                <?php the_content(); ?>
+            </div>
+        </div>
+        <div class="linknavigation">
+            <div class="left"><?php previous_post_link('<div class="icon"><i class="fa fa-angle-double-left"></i></div><div class="link">%link</div>'); ?></div>
+            <div class="middle"><a href="#" class="hvr-grow-shadow">En voir plus</a></div>
+            <div class="right"><?php next_post_link('<div class="link">%link</div><div class="icon"><i class="fa fa-angle-double-right"></i></div>'); ?></div>
+        </div>
 	</div>
 	<?php include('custom-footer.php'); ?>
 </article>

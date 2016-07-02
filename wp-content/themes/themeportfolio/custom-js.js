@@ -129,6 +129,16 @@ $('body').ready(function(){
     });
 })
 
+$(".linknavigation .left").hover(function(){
+    $(this).find(".icon").css({
+        color:'black'
+    })
+}, function(){
+    $(this).find(".icon").css({
+        color:"",
+    })
+})
+
 $('#head').owlCarousel({
     animateOut: 'fadeOutDown',
     animateIn: 'fadeInDown',

@@ -52,41 +52,5 @@
         </div>
     </div>
 
-	<div class="wrapper">
-        <?php if(!is_home()){ ?>
-            <div class="wrappertopandbottom">
-                <div class="left">
-                    <div class="flexed">
-                        <a href="#" class="showmenuleft"><i class="fa fa-bars"></i></a>
-                    </div>
-                </div>
-                <div class="right"></div>
-                <div class="top">
-                    <div class="flexed">Alexandre<span class="red">Kong</span></div>
-                    <div class="rond" style="bottom:-47px;display:none;">
-                        <div class="rond-centre"></div>
-                        <div class="rond-one">
-                            <div class="uno"></div>
-                            <div class="dos"></div>
-                            <div class="tres"></div>
-                        </div>
-                        <div class="rond-two">
-                            <div class="uno"></div>
-                            <div class="dos"></div>
-                            <div class="tres"></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="bottom">
-                    <div class="social">
-                        <ul>
-                            <li><a href=""><i class="fa fa-instagram"></i></a></li>
-                            <li><a href=""><i class="fa fa-twitter"></i></a></li>
-                            <li><a href=""><i class="fa fa-linkedin"></i></a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        <?php } ?>
 		<section class="container" style="opacity:0">
 			<?php do_action( 'foundationpress_after_header' );

@@ -37,29 +37,33 @@
 	    </div>
 	</div>
 
-	<div class="fixednav">
-		<div class="tiw">
-		    AlexandreKong
-		</div>
-	    <?php wp_nav_menu( array( 'theme_location' => 'header-menu' ) ); ?>
-	</div>
+    <a class="burgermenuz">
+        <i class="fa fa-bars"></i>
+    </a>
 
 	<?php if (is_home()){
 		include('custom-header.php');
 	} ?>
+
+    <div class="hiddedmenu">
+        <a href="#" class="close"><i class="fa fa-times"></i></a>
+        <div class="flexed">
+            <?php wp_nav_menu( array( 'theme_location' => 'header-menu' ) ); ?>
+        </div>
+    </div>
 
 	<div class="wrapper">
         <?php if(!is_home()){ ?>
             <div class="wrappertopandbottom">
                 <div class="left">
                     <div class="flexed">
-                        <a href="#"><i class="fa fa-bars"></i></a>
+                        <a href="#" class="showmenuleft"><i class="fa fa-bars"></i></a>
                     </div>
                 </div>
                 <div class="right"></div>
                 <div class="top">
                     <div class="flexed">Alexandre<span class="red">Kong</span></div>
-                    <div class="rond" style="bottom:-47px;">
+                    <div class="rond" style="bottom:-47px;display:none;">
                         <div class="rond-centre"></div>
                         <div class="rond-one">
                             <div class="uno"></div>

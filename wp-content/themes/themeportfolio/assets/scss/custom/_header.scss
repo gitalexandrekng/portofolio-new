@@ -3,30 +3,32 @@
 }
 
 .wrapper{
-    padding:50px;
+    padding:40px;
     position:relative;
 
     .wrappertopandbottom{
         width:100vw;
         height:100vh;
         position:fixed;
-        z-index:999;
+        z-index:998;
         top:0;
         left:0;
         pointer-events: none;
 
         .left{
             height:100vh;
-            width:50px;
+            width:40px;
             background:white;
             position:fixed;
             left:0;
             top:0;
             display: flex;
             pointer-events: auto;
+            transition: 0.3s;
 
             .flexed{
                 margin:auto;
+                transition: 0.3s;
 
                 a{
                     color:black;
@@ -40,7 +42,7 @@
 
         .right{
             height:100vh;
-            width:50px;
+            width:40px;
             background:white;
             position:fixed;
             right:0;
@@ -48,7 +50,7 @@
         }
 
         .top{
-            height:50px;
+            height:40px;
             width:100vw;
             background:white;
             position:absolute;
@@ -72,7 +74,7 @@
         }
 
         .bottom{
-            height:50px;
+            height:40px;
             width:100vw;
             background:white;
             position:absolute;
@@ -100,6 +102,33 @@
                         }
                     }
                 }
+            }
+        }
+    }
+
+    @include breakpoint(small down){
+        padding:0px 0px 0px 0px;
+
+        .wrappertopandbottom{
+            position:absolute;
+
+            .left{
+                display: none;
+            }
+
+            .right{
+                display: none;
+            }
+
+            .top{
+                position:absolute;
+                background:#000;
+                color:white;
+                display: none;
+            }
+
+            .bottom{
+                display:none;
             }
         }
     }

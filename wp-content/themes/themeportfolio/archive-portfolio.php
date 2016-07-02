@@ -25,22 +25,28 @@ get_header(); ?>
 <div class="archiveportfolio fademe">
 	<div class="in">
 
+		<!--<section class="parallax-container" style="height: 550px;">
+	    	<img class="parallax" data-safe-height="0.3" src="<?php echo get_stylesheet_directory_uri() ?>/images/fond.jpg?1" />
+	    	<div class="teaser">
+		        <div class="content">
+		        	<h1>Duis aute</h1>
+		        	<p>Consectetur adipisicing elit, sed do eiusmod
+		        </div>
+	    	</div>
+	    </section>-->
+
         <!-- TITRE -->
-        <div class="containerheader">
-            <div class="titzc">
-                <div class="titz">
-                    <h3 class="Portfolio">Portfolio</h3>
-                </div>
-            </div>
+        <div class="containerheaderz">
+			<h2>Portfolio</h2>
         </div>
 
         <!-- Titre -->
         <div class="portfoliotitle">
             <div class="boutonfiltre">
-                <button class="hvr-bounce-to-top buttonchange allz">Tout</button>
-                <button class="hvr-bounce-to-top buttonchange sites">Sites</button>
-                <button class="hvr-bounce-to-top buttonchange illus">Illustrations</button>
-                <button class="hvr-bounce-to-top buttonchange photographies">Photographies</button>
+                <button class="hvr-grow-shadow buttonchange allz">Tout</button>
+                <button class="hvr-grow-shadow buttonchange sites">Sites</button>
+                <button class="hvr-grow-shadow buttonchange illus">Illustrations</button>
+                <button class="hvr-grow-shadow buttonchange photographies">Photographies</button>
             </div>
         </div>
 

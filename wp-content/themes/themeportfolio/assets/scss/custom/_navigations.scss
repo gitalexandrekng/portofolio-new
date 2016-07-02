@@ -1,0 +1,56 @@
+.hiddedmenu{
+    position:fixed;
+    top:0;
+    left:-100%;
+    width:400px;
+    height:100vh;
+    background:white;
+    z-index:800;
+    display:flex;
+    transition: 0.5s;
+
+    .close{
+        position:absolute;
+        top:60px;
+        right:20px;
+        display: block;
+        color:black;
+
+        &:hover{
+            i{
+                color:$primary-color;
+            }
+        }
+
+        i{
+            color:black;
+        }
+    }
+
+    .flexed{
+        margin:auto;
+        text-align: center;
+        opacity: 0;
+
+        .menu-customnav-container{
+            ul{
+
+                .active{
+
+                    a{
+                        border-radius: 3px !important;
+                    }
+                }
+
+                li{
+                    display:block;
+
+                    a{
+                        text-transform: uppercase;
+                        font-family:"Oswald";
+                    }
+                }
+            }
+        }
+    }
+}

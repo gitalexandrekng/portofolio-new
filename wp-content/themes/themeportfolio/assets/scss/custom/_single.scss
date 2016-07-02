@@ -13,6 +13,17 @@
     }
 }
 
+.colored-description{
+    min-height:300px;
+    padding:50px 0px;
+
+    h2{
+        text-transform: uppercase;
+        font-size:22px;
+        text-align: center;
+    }
+}
+
 .respclass{
     @include breakpoint(small down){
         margin-top:60px;
@@ -92,7 +103,6 @@
     z-index:20;
     background:white;
     margin-top:100vh;
-    padding-top:50px;
     width:100%;
 
     .linkproject{
@@ -157,7 +167,7 @@
     .comeback{
         display:flex;
         color:#CCC;
-        transition: 0.3s;
+
 
         &:hover{
             color:#666;
@@ -174,7 +184,6 @@
             display:flex;
             border-radius:50%;
             border:2px solid lighten(#CCC, 10%);
-            transition:0.3s;
 
             i{
                 margin:auto;

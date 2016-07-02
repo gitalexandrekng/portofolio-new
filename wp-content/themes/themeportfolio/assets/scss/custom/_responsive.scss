@@ -1,3 +1,24 @@
+.burgermenuz{
+
+    @include breakpoint(medium up){
+        display: none;
+    }
+    
+    position:fixed;
+    top:20px;
+    left:20px;
+    width:40px;
+    height:40px;
+    display: flex;
+    border-radius: 50%;
+    background:rgba(255,255,255,0.5);
+    z-index:998;
+    color:black;
+    i{
+        margin: auto;
+    }
+}
+
 .responsivehome{
     @include breakpoint(medium up) {
         display:none;
@@ -11,22 +32,6 @@
     width:100vw;
     text-align:center;
     display:flex;
-
-    .burgermenuz{
-        position:fixed;
-        top:20px;
-        left:20px;
-        width:40px;
-        height:40px;
-        display: flex;
-        border-radius: 50%;
-        background:rgba(255,255,255,0.5);
-        z-index:998;
-        color:black;
-        i{
-            margin: auto;
-        }
-    }
 
     .fade{
         padding-top:50px;

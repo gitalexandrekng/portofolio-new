@@ -19,8 +19,26 @@ get_header(); ?>
 <?php while ( have_posts() ) : the_post(); ?>
 
 <article <?php post_class('singlecontent') ?> id="post-<?php the_ID(); ?>">
-	<div class="row">
-		<div class="medium-6 columns">
+
+    <!-- ENCART DE COULEUR
+    /
+    ============================= -->
+
+	<div class="colored-description" style="background:<?php the_field('couleurs'); ?>;color:<?php the_field('couleur_decriture'); ?>">
+        <div class="row">
+            <div class="small-12 columns">
+                <h2><?php the_excerpt() ?></h2>
+            </div>
+            <div class="small-6 columns">dzdedze</div>
+            <div class="small-6 columns">dzdedze</div>
+        </div>
+	</div>
+
+    <!-- LIEN DE RETOUR
+    /
+    ============================= -->
+	<div class="row fullwidth">
+		<div class="medium-12 columns">
 			<a class="fadepartiel comeback" href="<?php bloginfo('home') ?>/portfolio">
 				<span class="yes">
 					<i class="fa fa-angle-left"></i>
@@ -28,8 +46,9 @@ get_header(); ?>
 				<span class="no">Retour au portfolio</span>
 			</a>
 		</div>
-		<div class="medium-6 columns"></div>
 	</div>
+
+
 	<?php do_action( 'foundationpress_post_before_entry_content' ); ?>
 	<div class="entry-content">
 		<div class="zer">

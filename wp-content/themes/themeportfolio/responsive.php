@@ -1,7 +1,4 @@
 <div class="responsivehome">
-    <a class="burgermenuz">
-        <i class="fa fa-bars"></i>
-    </a>
     <div class="fade">
         <div class="in">
             <div class="title"><h1>Alexandre<span class="red">Kong</span></h1></div>

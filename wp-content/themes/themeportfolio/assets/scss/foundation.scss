@@ -27,7 +27,10 @@
 @import 'custom/archive';
 @import 'custom/single';
 @import 'custom/contact';
+@import 'custom/parallax';
 @import 'custom/responsive';
+@import 'custom/navigations';
+@import 'custom/all';
 
 // Foundation global styles
 @include foundation-global-styles;

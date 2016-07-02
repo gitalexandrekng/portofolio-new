@@ -8,7 +8,9 @@ $(window).load(function(){
         },0)
     }, 100)
 
-    $('.container').addClass('animated fadeIn')
+    setTimeout(function(){
+        $('.container').addClass('animated fadeIn')
+    },300)
 
     setTimeout(function(){
         $('.container').removeClass('animated fadeIn').css('opacity', '1')
@@ -19,7 +21,49 @@ $(window).load(function(){
             $('.entry-title').addClass('animated fadeInUp')
         }, 850)
     }
+
+    if($('.containerheaderz').length){
+        setTimeout(function(){
+            $('h2').addClass('animated fadeInUp')
+        }, 400)
+    }
 })
+
+$('.showmenuleft').on('click', function(e){
+    e.preventDefault();
+    $('.hiddedmenu').css({
+        left:'40px',
+    })
+
+    $('.left .flexed').css({
+        opacity:'0',
+        pointerEvents:'none'
+    })
+
+    setTimeout(function(){
+        $('.hiddedmenu .flexed').addClass('animated fadeInUp')
+    }, 500)
+})
+
+$('.close').on('click', function(e){
+    e.preventDefault();
+    $('.hiddedmenu').css({
+        left:'-400px',
+    })
+
+    $('.left .flexed').css({
+        opacity:'',
+        pointerEvents:''
+    })
+
+    $('.hiddedmenu .flexed').removeClass('animated fadeInUp')
+
+    /*while(var nombre = 1; nombre <= 4; nombre++){
+        $('.hiddedmenu .flexed li:gt('+ nombre +')').removeClass('animated fadeInUp')
+    }*/
+})
+
+$('.menu-customnav-container a').addClass('fadepartiel')
 
 $(".zoulou").css("min-height", $('.cms-section').outerHeight())
 

@@ -712,6 +712,20 @@
     }
 }
 
+.titleheader{
+    background:rgb(39,39,39);
+    padding:20px 0px;
+    text-align: center;
+    color:white;
+    text-transform: uppercase;
+    font-family: "Montserrat";
+    letter-spacing: 5px;
+
+    .red{
+        color:$primary-color;
+    }
+}
+
 .text-see{
     position:absolute;
     bottom:20px;

@@ -1,3 +1,48 @@
+.navtopz{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    z-index:800;
+    height:60px;
+    display:flex;
+    background:rgba(255,255,255,0.9);
+    //box-shadow:0px 0px 10px rgba(0,0,0,0.2);
+    opacity:0;
+    transition:0.5s;
+    pointer-events: none;
+
+    @include breakpoint(small down){
+        display: none;
+    }
+
+    .menu-customnav-container{
+        margin:auto;
+
+        ul{
+
+            .active{
+                a{
+                    background:transparent;
+                    color:$primary-color;
+                }
+            }
+
+            li{
+                a{
+                    font-family: "Oswald";
+                    text-transform: uppercase;
+                    color:black;
+
+                    &:hover{
+                        color:$primary-color;
+                    }
+                }
+            }
+        }
+    }
+}
+
 .hiddedmenu{
     position:fixed;
     top:0;

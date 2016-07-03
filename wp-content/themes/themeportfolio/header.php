@@ -52,5 +52,10 @@
         </div>
     </div>
 
+    <div class="navtopz">
+        <?php wp_nav_menu( array( 'theme_location' => 'header-menu' ) ); ?>
+    </div>
+
 		<section class="container" style="opacity:0">
+            <div class="titleheader">Alexandre<span class="red">Kong</span></div>
 			<?php do_action( 'foundationpress_after_header' );

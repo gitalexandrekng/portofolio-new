@@ -24,32 +24,39 @@ get_header(); ?>
     /
     ============================= -->
 
+    <div class="toptop">
+        <div class="backg"></div>
+        <h2><?php the_excerpt() ?></h2>
+        <div class="linkproject">
+            <a href="<?php the_field('link'); ?>"><i class="fa fa-link"></i> <?php the_field('link'); ?></a>
+        </div>
+    </div>
+
 	<div class="colored-description">
+        <div class="septop"><i class="fa fa-angle-double-down"></i></div>
         <div class="sep"></div>
         <div class="row">
             <div class="small-12 columns">
-                <h2><?php the_excerpt() ?></h2>
-                <div class="linkproject">
-    				<a href="<?php the_field('link'); ?>"><i class="fa fa-link"></i> <?php the_field('link'); ?></a>
-    			</div>
                 <div class="detailproject">
-                    <div class="titletype">Type de projet :</div>
                     <div class="row">
-                        <?php
+                        <div class="medium-12 columns">
+                            <div class="titletype">Type de projet :</div>
+                            <div class="row">
+                                <?php
 
-							$values = get_field('type');
-							if($values)
-							{
-								foreach($values as $value)
-								{
-									echo '<div class="small-4 columns end"><div class="insingle">' . $value . '</div></div>';
-								}
-							}
+        							$values = get_field('type');
+        							if($values)
+        							{
+        								foreach($values as $value)
+        								{
+        									echo '<div class="medium-6 large-3 columns end"><div class="insingle">' . $value . '</div></div>';
+        								}
+        							}
 
-						?>
-                    </div>
-                    <div class="row" style="margin-top:50px">
-                        <div class="medium-6 columns">
+        						?>
+                            </div>
+                        </div>
+                        <div class="medium-12 columns">
                             <div class="titletype">Mon rôle :</div>
                             <ul class="ta">
                                 <?php
@@ -59,14 +66,14 @@ get_header(); ?>
         							{
         								foreach($values as $value)
         								{
-        									echo '<li><i class="fa fa-angle-right"></i>' . $value . '</li>';
+        									echo '<li>' . $value . '</li>';
         								}
         							}
 
         						?>
                             </ul>
                         </div>
-                        <div class="medium-6 columns">
+                        <div class="medium-12 columns">
                             <div class="titletype">Client et cahier des charges :</div>
                             <div><?php the_field('client'); ?></div>
                         </div>
@@ -114,7 +121,7 @@ get_header(); ?>
         </div>
         <div class="linknavigation">
             <div class="left"><?php previous_post_link('<div class="icon"><i class="fa fa-angle-double-left"></i></div><div class="link">%link</div>'); ?></div>
-            <div class="middle"><a href="#" class="hvr-grow-shadow">En voir plus</a></div>
+            <div class="middle"><a href="<?php echo bloginfo('home') ?>/portfolio" class="fadepartiel hvr-grow-shadow">En voir plus</a></div>
             <div class="right"><?php next_post_link('<div class="link">%link</div><div class="icon"><i class="fa fa-angle-double-right"></i></div>'); ?></div>
         </div>
 	</div>

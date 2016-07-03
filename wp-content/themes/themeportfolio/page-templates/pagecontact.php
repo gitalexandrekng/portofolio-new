@@ -5,29 +5,12 @@ Template Name: Contact
 get_header(); ?>
 
 <section class="contact">
-    <div class="containerheader">
-        <div class="flexed">
-            <div class="leftheader">
-                <div class="slogan">
-                    <h2>Alexandre<span style="color:#c0392b">Kong</span></h2>
-                </div>
-            </div>
-            <div class="rightheader">
-                <nav class="archiveportfolionav">
-                    <?php wp_nav_menu( array( 'theme_location' => 'header-menu' ) ); ?>
-                    <button class="shownav"><i class="fa fa-bars"></i></button>
-                </nav>
-            </div>
-        </div>
-        <div class="showresponsive">
-            <?php wp_nav_menu( array( 'theme_location' => 'header-menu' ) ); ?>
-        </div>
-        <div class="titzc">
-            <div class="titz">
-                <h3 class="Portfolio">Contact</h3>
-            </div>
-        </div>
+
+    <!-- TITRE -->
+    <div class="containerheaderz">
+        <h2>Contact</h2>
     </div>
+
     <div class="row small-collapse fullwidth aboutme">
         <div class="medium-12 columns">
             <div class="in">

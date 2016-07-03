@@ -100,30 +100,34 @@ $('.retour a').on('click', function(e){
 $('.fixednav a').addClass('fadepartiel')
 
 $('body').ready(function(){
-    $(".archiveportfolionav .menu-customnav-container").on('inview', function(event, isInView) {
+    $('.entry-content').on('inview', function(event, isInView) {
         if (isInView) {
-            $('.fixednav').css({
-                opacity:"0",
-                top:"-80px"
+            $('.navtopz').css({
+                opacity:"1",
+                height:"50px",
+                pointerEvents:"auto"
             })
         } else {
-            $('.fixednav').css({
-                opacity:"1",
-                top:"0px"
+            $('.navtopz').css({
+                opacity:"0",
+                height:"70px",
+                pointerEvents:"none"
             })
         }
     });
 
-    $('.entry-content').on('inview', function(event, isInView) {
-        if (isInView) {
-            $('.fixednav').css({
+    $('.containerheaderz').on('inview', function(event, isInView) {
+        if (!(isInView)) {
+            $('.navtopz').css({
                 opacity:"1",
-                top:"0px"
+                height:"50px",
+                pointerEvents:"auto"
             })
         } else {
-            $('.fixednav').css({
+            $('.navtopz').css({
                 opacity:"0",
-                top:"-80px"
+                height:"70px",
+                pointerEvents:"none"
             })
         }
     });
@@ -131,11 +135,21 @@ $('body').ready(function(){
 
 $(".linknavigation .left").hover(function(){
     $(this).find(".icon").css({
-        color:'black'
+        borderColor:'#666'
     })
 }, function(){
     $(this).find(".icon").css({
-        color:"",
+        borderColor:"",
+    })
+})
+
+$(".linknavigation .right").hover(function(){
+    $(this).find(".icon").css({
+        borderColor:'#666'
+    })
+}, function(){
+    $(this).find(".icon").css({
+        borderColor:"",
     })
 })
 

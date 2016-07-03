@@ -25,16 +25,6 @@ get_header(); ?>
 <div class="archiveportfolio fademe">
 	<div class="in">
 
-		<!--<section class="parallax-container" style="height: 550px;">
-	    	<img class="parallax" data-safe-height="0.3" src="<?php echo get_stylesheet_directory_uri() ?>/images/fond.jpg?1" />
-	    	<div class="teaser">
-		        <div class="content">
-		        	<h1>Duis aute</h1>
-		        	<p>Consectetur adipisicing elit, sed do eiusmod
-		        </div>
-	    	</div>
-	    </section>-->
-
         <!-- TITRE -->
         <div class="containerheaderz">
 			<h2>Portfolio</h2>
